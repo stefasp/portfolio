@@ -1,0 +1,171 @@
+.projectsList{
+  grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  width: 97%;
+}
+
+.primary-project:hover{
+  box-shadow: 0 0 8px #383a624f;
+}
+
+.primary-project {
+  position: relative;
+  padding-right: 37%;
+  padding-left: 27px;
+  display: block;
+  height: 359px;
+  border-radius: 17px;
+  background-position: 104% center;
+  background-size: 39%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.primary-project.shiphero{
+  background-color: #d0ddff;
+  background-image: url(img/projects/ShipHero.png);
+}
+.primary-project.forta{
+  background-color: #CCEDFF;
+  background-image: url(img/projects/Forta.png);
+}
+.primary-project.fennel{
+  background-color: #C8ECFF;
+  background-image: url(img/projects/Fennel.png);
+}
+.primary-project.lev{
+  background-color: #DCDBFF;
+  background-image: url(img/projects/Lev.png);
+}
+.primary-project.restorando{
+  background-color: #FEE2E2;
+  background-image: url(img/projects/Restorando.png);
+}
+.primary-project.timeular{
+  background-color: #D9E1FF;
+  background-image: url(img/projects/Timeular.png);
+}
+.primary-project .div-2,
+.primary-project .column,
+.primary-project .div-3,
+.primary-project .div-6,
+.primary-project .div-9,
+.primary-project .div-10,
+.primary-project .div-12 {
+  display: flex;
+}
+.primary-project .div-2,
+.primary-project .column,
+.primary-project .div-3,
+.primary-project .div-9 {
+  gap: 20px;
+}
+.primary-project .div-2,
+.primary-project .column,
+.primary-project .column-2 {
+  flex-direction: column;
+  align-items: stretch;
+}
+.primary-project .div-3 {
+  justify-content: center;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  color: var(--NewBlack, #292b4a);
+  margin-top: 50px;
+}
+.primary-project .div-4,
+.primary-project .textContainer,
+.primary-project .description,
+.primary-project .div-8,
+.primary-project .div-9,
+.primary-project .div-10,
+.primary-project .div-11,
+.primary-project .div-13,
+.primary-project .img,
+.primary-project .img-2 {
+  display: flex;
+  flex-direction: column;
+}
+.primary-project .title {
+  font-size: 22px;
+}
+.primary-project .title .highlight{
+    color: rgb(41 41 41);
+    mix-blend-mode: color-burn;
+}
+.primary-project .description {
+    margin-top: 15px;
+    line-height: 23px;
+    font-size: 14px;
+}
+.primary-project .projectAction {
+  text-decoration: none;
+  font-weight: 500;
+  color: #3f3f3f;
+  mix-blend-mode: color-burn;
+  align-self: start;
+  margin-top: 10px;
+  gap: 4px;
+  font-size: 16px;
+  background-size: 20px;
+  background-image: url(img/ArrowDoble.png);
+  line-height: 79%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 14px 24px 14px 0;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.primary-project .div-10 {
+  justify-content: flex-end;
+  margin-top: 24px;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 17px 11px 0;
+}
+
+.thumbnailList .list{
+  margin: 20px;
+  display: flex;
+  gap: 14px;
+}
+.thumbnailList .list .img.large{
+  width: 49.5%;
+}
+.thumbnailList .list img{
+  width: 100%;
+}
+.thumbnailList .list .img{
+  width: 24.2%;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.thumbnailList .list .img .description{
+  padding: 19% 6%;
+  position: absolute;
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  width: 88%;
+  height: 100%;
+  background: rgb(41 43 74 / 82%);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(3.03333px);
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Apply transition to opacity property */
+}
+.thumbnailList .list .img.large .description{
+    padding: 10% 3%;
+    width: 95%;
+}
+.thumbnailList .list .img:hover .description{
+  opacity: 1; /* Make the element visible on hover */
+}
+.thumbnailList .list .img .description h3{
+  font-size: 21.2px;
+}

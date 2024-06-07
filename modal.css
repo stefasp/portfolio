@@ -1,0 +1,127 @@
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed; /* Position modal overlay */
+  z-index: 1; /* Ensure modal is above other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Enable scrolling if content exceeds viewport */
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent black overlay */
+  z-index: 999999;
+}
+
+.modal-content {
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    margin: 5% auto;
+    padding: 0 2% 1%;
+    width: 75%;
+    border-bottom: 20px solid #fff;
+    z-index: 9999999;
+    position: relative;
+}
+.modal-content .modal-action-bar{
+    position: fixed;
+    margin: 0;
+    background: #fff;
+    width: 75%;
+    padding: 1% 0%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content .title,
+.modal-content h1,
+.modal-content h2,
+.modal-content p,
+.modal-content img,
+.modal-content ul{
+  width: 100%;
+  height: auto;
+}
+
+.modal-content .title {
+  text-align: center;
+}
+.modal-content .title h1{
+  font-size: 28px;
+}
+.modal-content h2,
+.modal-content .title .highlight{
+  color: #7074AF;
+}
+.modal-content h2{
+  font-size: 18px;
+}
+.modal-content p,
+.modal-content ul{
+  font-size: 14px;
+  line-height: 23px;
+}
+.modal-content .two-columns {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 3% 0;
+    gap: 2%;
+}
+
+.modal-content .img-half {
+  flex: 0 0 35%; /* 35% del ancho del contenedor */
+}
+
+.modal-content .img-half img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del div */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.modal-content .text-half {
+  flex: 0 0 60%; /* 65% del ancho del contenedor */
+}
+
+/* Añade algunos estilos básicos para el contenido de texto */
+.modal-content .text-half h2 {
+  margin-top: 0;
+}
+
+.modal-content .gif-container{
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+.modal-content .gif-container img{
+    width: auto;
+    height: 100%;
+}
+
+.modal-content ul{
+    padding: 0 1% 1%;
+    list-style-type: square;
+    margin: 0;
+  }
+.modal-content ul li{
+    width: 95%;
+    padding: 0 0.5% 1%;
+}
+
+.modal-content ul li{::before {
+    content: '✔'; /* Puede ser un símbolo Unicode o una imagen */
+    margin-right: 10px;
+    color: green;
+}

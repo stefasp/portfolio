@@ -1,0 +1,316 @@
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body{
+  text-color: rgba(41, 43, 74, 1);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin:0px;
+  padding-top:64px ;
+  overflow-x: hidden;
+}
+
+.header {
+  z-index: 999;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  top: 0;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0px 0px 8px #62669045;
+  position: fixed;
+}
+.header .img {
+  aspect-ratio: 1.15;
+  object-fit: auto;
+  object-position: center;
+  width: 75px;
+}
+.menu-options {
+  justify-content: end;
+  display: flex;
+  gap: 5px;
+  flex: 1;
+  margin: auto 0;
+  padding: 10px 80px;
+}
+.menu-options .selected{
+  color: var(--Purple-Light, #ac9ee3);
+}
+.menu-options a:hover{
+  color: var(--Purple-Light, #ac9ee3);
+}
+.menu-options a {
+    padding: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(41, 43, 74, 1);
+    transition: color 0.3s ease-in-out;
+}
+.hero {
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+}
+.hero .container {
+  justify-content: center;
+  margin: auto 0;
+  padding: 0 60px;
+  width: 100%;
+  text-align: center;
+  background: url(img/bg.png);
+}
+.hero .div-4 {
+  gap: 20px;
+  display: flex;
+}
+.hero .column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 22%;
+  margin-left: 0px;
+}
+.hero .lefty {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 2px 0;
+}
+.hero .righty {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 2px 0;
+}
+.hero .polaroid {
+  overflow: hidden;
+  width: 188px;
+  padding: 20px 68px 20px;
+  max-width: 100%;
+}
+.hero .img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero .left-elements {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 8px 0px 20px 20px;
+}
+.hero .right-elements {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 8px 0px 20px 20px;
+}
+.hero .ux;
+.hero .hey;
+.hero .postIt;
+.hero .rocket{
+  display: flex;
+}
+.hero .postIt{
+  margin: 30px 10px 10px 36px;
+}
+.hero .asterisco {
+  margin: 70px 70px 10px;
+}
+.hero .div-12 {
+  border-color: rgba(49, 193, 255, 1);
+  border-style: solid;
+  border-width: 3px;
+  display: flex;
+  margin-top: 24px;
+  gap: 19px;
+  font-size: 69px;
+  color: #c6c1d0;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  padding: 15px 12px;
+}
+.hero .img-2 {
+  aspect-ratio: 0.26;
+  object-fit: auto;
+  object-position: center;
+  width: 13px;
+  fill: var(--NewBlack, #292b4a);
+  stroke-width: 1.524px;
+  stroke: #fff;
+  filter: drop-shadow(0px 3.049px 3.049px rgba(0, 0, 0, 0.25));
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 2px;
+  align-self: start;
+}
+
+.hero .div-14 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.hero .div-15 {
+  display: flex;
+  gap: 9px;
+}
+.hero .div-16 {
+  background-color: #31c1ff;
+  align-self: start;
+  margin-top: 20px;
+  width: 10px;
+  height: 10px;
+}
+.hero .div-17 {
+  background-color: #31c1ff;
+  height: 10px;
+}
+.hero .column-2 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 57%;
+  margin-left: 20px;
+}
+.hero .div-18 {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: var(--NewBlack, #292b4a);
+  text-align: center;
+  margin: auto 0;
+}
+.hero .div-19 {
+  align-self: center;
+  font: 400 90px Italiana, sans-serif;
+}
+.hero .description {
+  margin-top: 6px;
+  line-height: 1.6;
+}
+
+.about-me {
+  background-color: var(--Purple-soft, #c3c5e9);
+  width: 100%;
+  padding: 20px 20px;
+  display: table;
+}
+.about-me .div-2,
+.about-me .column {
+  gap: 20px;
+  display: flex;
+  width: 97%;
+}
+.about-me .column img{
+  height: 100px;
+  width: 100px;
+}
+.about-me .preview{
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.5s ease;
+}
+.about-me .preview .title{
+  font-size: 18px;
+}
+.about-me .preview:hover .description{
+  opacity: 1; /* Make the element visible on hover */
+}
+.about-me .preview .description{
+  opacity: 0; /* Initially hide the element */
+  transition: opacity 0.5s ease; /* Apply transition to opacity property */
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  padding: 0 5%;
+  line-height: 21px;
+  font-size: 14px;
+  text-wrap: balance;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 9;
+  height: 100%;
+  background-color: #fff;
+}
+.about-me .preview{
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 10px 20px;
+}
+.about-me .div-7,
+.about-me .div-10,
+.about-me .div-13 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.about-me .img {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 99px;
+  align-self: center;
+}
+.about-me .div-5,
+.about-me .div-8,
+.about-me .div-11,
+.about-me .div-14 {
+  margin-top: 12px;
+}
+
+.section-title{
+  line-height: 46px;
+  font-size: 30px;
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+}
