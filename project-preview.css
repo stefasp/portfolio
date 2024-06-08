@@ -130,16 +130,20 @@
 .thumbnailList .list{
   margin: 20px;
   display: flex;
+  flex-wrap: nowrap; /* Ensure items stay in a single row */
   gap: 14px;
-}
-.thumbnailList .list .img.large{
-  width: 49.5%;
 }
 .thumbnailList .list img{
   width: 100%;
 }
+.thumbnailList .list .img.large{
+  /*width: 49.5%;*/
+  flex: 2;
+
+}
 .thumbnailList .list .img{
-  width: 24.2%;
+  /*width: 24.2%;*/
+  flex: 1;
   border-radius: 15px;
   position: relative;
   overflow: hidden;

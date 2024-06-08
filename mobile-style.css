@@ -1,23 +1,42 @@
 @media (max-width: 991px) {
-  .header {
-    flex-wrap: wrap;
-  }
-  .header .div-2 {
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-  .hero {
-    max-width: 100%;
-    flex-wrap: wrap;
-  }
+  
   .hero .container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0;
   }
-  .hero .div-4 {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0px;
+
+  .hero .right-elements{
+    padding: 0;
+  }
+  .hero .rocket{
+    width: 100px;
+  }
+  .hero .asterisco{
+    width: 100px;
+    margin: 30px 60px 0px;
+  }
+  .hero .hey{
+    margin-top: -30px;
+    width: 80px;
+  }
+  .hero .description br{
+    display: none;
+  }
+  .hero .polaroid{
+    width: 150px;
+    padding: 0;
+  }
+  .hero .postIt{
+    width: 70px;
+  }
+  .hero .ux{
+    width: 100px;
+  }
+  .hero .div-19{
+    font-size: 45px;
+  }
+  .hero .description{
+    font-size: 13px;
   }
   .hero .div-2 {
     border-color: rgba(253, 43, 43, 0.12);
@@ -26,9 +45,6 @@
     background-color: rgba(253, 43, 43, 0.12);
     width: 1px;
     height: 480px;
-  }
-  .hero .column {
-    width: 100%;
   }
   .hero .div-5 {
     margin-top: 40px;
@@ -53,15 +69,23 @@
   .hero .div-23 {
     white-space: initial;
   }
+  .section-title{
+    padding: 10px 20px;
+  }
+  .projectsList{
+    gap: 0;
+    width: auto;
+  }
   .about-me {
+    display: none;
     max-width: 100%;
-    padding: 0 20px;
+    padding: 20px;
   }
   .about-me .div-2,
   .about-me .column {
     flex-direction: column;
     align-items: stretch;
-    gap: 0px;
+    gap: 10px;
   }
   .about-me .div-3,
   .about-me .div-6,
@@ -80,6 +104,8 @@
   .primary-project {
     max-width: 100%;
     margin-top: 20px;
+    padding-top: 30px;
+    height: 280px;
   }
   .primary-project .column,
   .primary-project .column-2 {
@@ -110,5 +136,14 @@
     left: 0;
     top: 0;
     padding-right: 3% !important;
+  }
+  .thumbnailList .list {
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  .thumbnailList .list .img.large{
+    flex: 0 0 100%;
+}
+  .thumbnailList .list .img{
+    flex: 0 0 49%; /* Each item takes 50% of the container width */
   }
 }

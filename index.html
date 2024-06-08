@@ -20,14 +20,14 @@
     <div class="header">
       <img
         loading="lazy"
-        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/c3cb74fa5d9dd9ad6f7decbc8c88fa3cc7c2ffecd6e6d4edd01a864cf2dadab5?apiKey=67773091c2bd47d6b0dce8c5be2fd202&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/c3cb74fa5d9dd9ad6f7decbc8c88fa3cc7c2ffecd6e6d4edd01a864cf2dadab5?apiKey=67773091c2bd47d6b0dce8c5be2fd202&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c3cb74fa5d9dd9ad6f7decbc8c88fa3cc7c2ffecd6e6d4edd01a864cf2dadab5?apiKey=67773091c2bd47d6b0dce8c5be2fd202&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/c3cb74fa5d9dd9ad6f7decbc8c88fa3cc7c2ffecd6e6d4edd01a864cf2dadab5?apiKey=67773091c2bd47d6b0dce8c5be2fd202&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/c3cb74fa5d9dd9ad6f7decbc8c88fa3cc7c2ffecd6e6d4edd01a864cf2dadab5?apiKey=67773091c2bd47d6b0dce8c5be2fd202&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c3cb74fa5d9dd9ad6f7decbc8c88fa3cc7c2ffecd6e6d4edd01a864cf2dadab5?apiKey=67773091c2bd47d6b0dce8c5be2fd202&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/c3cb74fa5d9dd9ad6f7decbc8c88fa3cc7c2ffecd6e6d4edd01a864cf2dadab5?apiKey=67773091c2bd47d6b0dce8c5be2fd202&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/c3cb74fa5d9dd9ad6f7decbc8c88fa3cc7c2ffecd6e6d4edd01a864cf2dadab5?apiKey=67773091c2bd47d6b0dce8c5be2fd202&"
+        srcset="img/logo.png"
         class="img"
       />
       <div class="menu-options">
         <a href="home.html" class="selected">Work</a>
-        <a href="process.html" class="unselected">Process</a>
-        <a href="experience.html" class="unselected">Experience</a>
-        <a href="#" class="unselected">Get in contact</a>
+        <!--<a href="process.html" class="unselected">Process</a>-->
+        <a href="https://www.linkedin.com/in/stefasp/" target="_blank" class="unselected">Experience</a>
+        <a href="#getInContactBox" class="unselected" >Get in contact</a>
       </div>
     </div>
     
@@ -185,7 +185,7 @@
       </div>
     </div>
      <!--restorando preview-->
-    <div class="primary-project restorando" id="">
+    <div class="primary-project restorando hide" id="">
       <div class="div-2">
         <div class="column">
           <div class="div-3">
@@ -203,7 +203,7 @@
       </div>
     </div>
      <!--timeular preview-->
-    <div class="primary-project timeular" id="">
+    <div class="primary-project timeular hide" id="">
       <div class="div-2">
         <div class="column">
           <div class="div-3">
@@ -257,7 +257,7 @@
         </div>
     </div>
     <div class="list">
-        <div class="img large">
+        <div class="img large mobileHide">
             <img src="img/projects/Thumbnail/kallpod.png" alt="ux"/>
             <div class="description"><h3>Kallpod</h3>A mobile ordering platform for your restaurants.</div>
         </div>
@@ -271,6 +271,29 @@
         </div>
     </div>
     
+</div>
+
+<div class="contactBox" id="getInContactBox">
+  <div class="columnLeft"><img src="img/postItGroup.png" alt="get in contact"/></div>
+  <div class="columntRight">
+    <h2 class="title space-mono-bold">Have a project?<br/>Let’s talk!</h2>
+    <div class="item">
+      <span class="linkBox">stefus.sp@gmail.com</span>
+      <span class="linkBox imgLink"><img src="img/Email.png" alt="get in contact"/></span>
+    </div>
+    <div class="item">
+      <a href="https://www.linkedin.com/in/stefasp" target="_blank">https://www.linkedin.com/in/stefasp</a>
+      <a href="https://www.linkedin.com/in/stefasp" class="imgLink" target="_blank"><img src="img/Linkedin.png" alt="get in contact"/></a>
+    </div>
+    <div class="item">
+      <a href="https://www.behance.net/stefasp" target="_blank">https://www.behance.net/stefasp</a>
+      <a href="https://www.behance.net/stefasp" class="imgLink" target="_blank"><img src="img/Behance.png" alt="get in contact"/></a>
+    </div>
+    <div class="item">
+      <a href="https://dribbble.com/stefus" target="_blank">https://dribbble.com/stefus</a>
+      <a href="https://dribbble.com/stefus" class="imgLink" target="_blank"><img src="img/Dribbble.png" alt="get in contact"/></a>
+    </div>
+  </div>
 </div>
 
 <!--modal de shiphero-->
@@ -498,6 +521,10 @@
         </div>
     </div>
 </div>
+
+<!-- modal de restorando -->
+
+<!-- modal de Timeular -->
 
 <script src="modalShiphero.js"></script>
 <script src="modalForta.js"></script>
