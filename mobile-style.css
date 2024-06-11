@@ -1,10 +1,41 @@
+@media (max-width: 1215px) {
+  .hero .div-19 {
+    font-size: 3rem;
+  }
+  .hero .description {
+    font-size: 0.9rem;
+  }
+  .hero .description br{
+    display: none;
+  }
+  .hero .rocket{
+    width: 120px;
+  }
+  .hero .asterisco{
+    width: 120px;
+    margin: 30px 60px 0px;
+  }
+  .hero .hey{
+    margin-top: -30px;
+    width: 100px;
+  }
+  .hero .polaroid{
+    width: 180px;
+    padding: 0;
+  }
+  .hero .postIt{
+    width: 90px;
+  }
+  .hero .ux{
+    width: 120px;
+  }
+}
 @media (max-width: 991px) {
   
   .hero .container {
     max-width: 100%;
     padding: 0;
   }
-
   .hero .right-elements{
     padding: 0;
   }
@@ -18,9 +49,6 @@
   .hero .hey{
     margin-top: -30px;
     width: 80px;
-  }
-  .hero .description br{
-    display: none;
   }
   .hero .polaroid{
     width: 150px;
@@ -142,8 +170,41 @@
   }
   .thumbnailList .list .img.large{
     flex: 0 0 100%;
-}
+  }
   .thumbnailList .list .img{
     flex: 0 0 49%; /* Each item takes 50% of the container width */
+  }
+}
+
+@media (max-width: 745px) {
+  .hero .rocket{
+    width: 90px;
+  }
+  .hero .asterisco{
+    width: 90px;
+    margin: 30px 60px 0px;
+  }
+  .hero .hey{
+    margin-top: -30px;
+    width: 70px;
+  }
+  .hero .polaroid{
+    width: 140px;
+    padding: 0;
+  }
+  .hero .postIt{
+    width: 60px;
+  }
+  .hero .ux{
+    width: 70px;
+  }
+  .thumbnailList .list .img{
+    flex: 0 0 48%; /* Each item takes 50% of the container width */
+  }
+  .contactBox .columnLeft{
+    display: none;
+  }
+  .contactBox .columntRight {
+    padding: 0 8%;
   }
 }
