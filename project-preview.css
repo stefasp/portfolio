@@ -152,7 +152,8 @@
 .thumbnailList .list .img .description{
   padding: 19% 6%;
   position: absolute;
-  font-size: 14px;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
   top: 0;
   left: 0;
   width: 88%;
@@ -171,5 +172,5 @@
   opacity: 1; /* Make the element visible on hover */
 }
 .thumbnailList .list .img .description h3{
-  font-size: 21.2px;
+  font-size: 1.2rem;
 }
