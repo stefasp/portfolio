@@ -1,4 +1,7 @@
 @media (max-width: 1215px) {
+  .header{
+    width: 95%;
+   } 
   .hero .div-19 {
     font-size: 3rem;
   }
