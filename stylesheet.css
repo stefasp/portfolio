@@ -49,6 +49,7 @@ body{
   font-style: normal;
   padding-top:64px ;
   overflow-x: hidden;
+  min-width: 363px;
 }
 .fixed-element {
     position: fixed;
