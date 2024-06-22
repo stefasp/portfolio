@@ -30,6 +30,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 html, body {
     width: 100%;
     height: 100%;
@@ -38,12 +41,12 @@ html, body {
 }
 
 body{
-  text-color: rgba(41, 43, 74, 1);
+  text-color: #292B4A;
+  font-size: 1rem;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  margin:0px;
   padding-top:64px ;
   overflow-x: hidden;
 }
@@ -87,6 +90,10 @@ body{
   text-decoration: none;
   color: rgba(41, 43, 74, 1);
   transition: color 0.3s ease-in-out;
+}
+.full-container{
+  display: block;
+  width: 100%;
 }
 .hero {
   z-index: 10;
