@@ -36,6 +36,11 @@
   .primary-project {
     background-size: auto 124%;
     padding-right: 36%;
+    display: block !important;
+    width: 100%;
+  }
+  .projectsList{
+    display: block !important;
   }
 }
 
@@ -108,10 +113,6 @@
   .section-title{
     padding: 10px 20px;
   }
-  .projectsList{
-    gap: 0;
-    width: auto;
-  }
   .about-me {
     display: none;
     max-width: 100%;
@@ -155,9 +156,6 @@
   }
   .primary-project .div-10 {
     margin-top: 34px;
-  }
-  .projectList {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Full width on mobile */
   }
   .modal-content {
     width: 96% !important;

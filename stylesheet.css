@@ -41,7 +41,7 @@ html, body {
 }
 
 body{
-  text-color: #292B4A;
+  color: #292B4A;
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -49,6 +49,14 @@ body{
   font-style: normal;
   padding-top:64px ;
   overflow-x: hidden;
+}
+.fixed-element {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
 }
 
 .header {
