@@ -31,12 +31,18 @@
   }
 }
 
+/* a partir de aca los projectos son a 1 renglon */
 @media (max-width: 1092px){
+  .projectsList {
+    display: block;
+  }
   .primary-project {
+    display: block;
     background-size: auto 124%;
     padding-right: 36%;
   }
 }
+
 @media (max-width: 991px) {
   .hero .container {
     max-width: 100%;
@@ -213,6 +219,14 @@
   .contactBox .columntRight {
     padding: 0 8%;
   }
+  .primary-project {
+    padding-right: 4%;
+    padding-left: 4%;
+    width: 92%;
+    height: auto;
+    background-image: none !important;
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -224,14 +238,13 @@
     padding: 0 10%;
   }
 }
-
-@media (max-width: 750px) {
-  .primary-project {
-    padding-right: 4%;
-    padding-left: 4%;
-    width: 92%;
-    height: auto;
-    background-image: none !important;
-    padding-bottom: 100px;
+/* a partir de aca los thumbnails son a 1 renglon */
+@media (max-width: 700px) {
+  .thumbnailList .list,
+  .thumbnailList .list .img{
+    display: block;
+  }
+  .thumbnailList .list .img{
+    margin-bottom: 3%;
   }
 }
