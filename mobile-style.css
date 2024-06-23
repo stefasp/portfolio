@@ -29,6 +29,9 @@
   .hero .ux{
     width: 120px;
   }
+  .primary-project .projectAction{
+    display: none;
+  }
 }
 
 /* a partir de aca los projectos son a 1 renglon */
@@ -36,7 +39,6 @@
   .primary-project {
     background-size: auto 124%;
     padding-right: 36%;
-    display: block !important;
     width: 100%;
   }
   .projectsList{
@@ -140,7 +142,7 @@
 
   .primary-project {
     max-width: 100%;
-    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 30px;
     height: 280px;
   }
@@ -158,18 +160,24 @@
     margin-top: 34px;
   }
   .modal-content {
-    width: 96% !important;
-    height: 98% !important;
+    width: 100% !important;
+    height: 100% !important;
     border: 0 !important;
     padding: 2% !important;
     margin: 0 !important;
   }
   .modal-content .modal-action-bar{
     box-shadow: 0 0 3px #677a8491;
-    width: 97% !important;
+    width: 100% !important;
     left: 0;
     top: 0;
     padding-right: 3% !important;
+  }
+  .modal-content .img-half{
+    display: none;
+  }
+  .modal-content .text-half {
+    flex: 0 0 100% !important;
   }
   .thumbnailList .list {
       flex-wrap: wrap; /* Allow items to wrap to the next line */

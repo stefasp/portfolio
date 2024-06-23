@@ -93,7 +93,7 @@ body{
   color: var(--Purple-Light, #ac9ee3);
 }
 .menu-options a {
-  padding: 2%;
+  padding: 1%;
   font-weight: 400;
   font-size: 0.9rem;
   text-decoration: none;
@@ -149,7 +149,7 @@ body{
 .hero .polaroid {
   overflow: hidden;
   width: 188px;
-  padding: 20px 68px 20px;
+  padding: 10px 7px 10px;
   max-width: 100%;
 }
 .hero .polaroid img,
@@ -257,7 +257,7 @@ body{
 .about-me .column {
   gap: 20px;
   display: flex;
-  width: 97%;
+  width: 100%;
 }
 .about-me .column img{
   height: 100px;
@@ -288,7 +288,6 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
   z-index: 9;
   height: 100%;
   background-color: #fff;
