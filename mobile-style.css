@@ -44,6 +44,10 @@
   .projectsList{
     display: block !important;
   }
+  .modal-content .modal-text > img, 
+  .modal-content .modal-text > gif {
+    margin: 10px 0 !important;
+  }
 }
 
 @media (max-width: 991px) {
