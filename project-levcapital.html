@@ -56,24 +56,38 @@
               <img src="img/projects/lev/01.png">
               <img src="img/projects/lev/02.png">
 
-              <h2>Deals task dashboard</h2>
+              <h3>Deals task dashboard</h3>
               <p>Let's zoom in on another key aspect of our project:</p>
               <p>Both brokers and borrowers will have clear visibility into their own pending tasks, as well as those of others. We've made sure to highlight any blocking tasks that may require immediate attention, ensuring smooth progress.</p>
               <p>Tasks are neatly organized by stage, providing users with a clear overview of their position in the process and what steps come next. This streamlined approach makes it effortless to track progress and stay on top of things every step of the way. 🚀📝</p>
               <img src="img/projects/lev/03.png">
 
               <h2>📝 Deal Feed</h2>
-              <p>In order to keep borrowers informed and on track with their transactions, we introduced a dynamic feed where they can stay updated with the latest developments on their deals. This feed provides real-time insights into the status of their transactions, ensuring borrowers are always in the loop and on schedule. 📰🔄</p>
+              <p>In order to keep borrowers informed and on track with their deal, we introduced a dynamic feed where they can stay updated with the latest developments on their deals. This feed provides real-time insights into the status of their transactions, ensuring borrowers are always in the loop and on schedule. 📰🔄</p>
+              <p>To structure feed notifications, I researched and listed all types of notifications we could send to borrowers. These include:</p>
+              <ul>
+                <li>Notifications about lenders involved in their deal: for example, when a lender is added, contacted by brokers, or when they pass or review the deal.</li>
+                <li>Notifications about terms: informing borrowers of new terms received (since one lender can send multiple terms).</li>
+                <li>Notifications about task statuses: including notifications for new tasks, updates to tasks, and task assignments.</li>
+                <li>Notifications about task notes: particularly important as comments are made to unblock tasks.</li>
+              </ul>
+              <p>Also, some things that I needed to consider to design notifications:</p>
+              <ul>
+                <li>Notifications may include actions, and in this case, we aim to ensure these actions are very clear for the user.</li>
+                <li>Lenders can send more than one term for a deal</li>
+                <li>Updates in lenders and terms can be done with a note</li>
+                <li>If a lender passed there is a reason attached</li>
+                <li>User may have multiple deals and, in that case, they would be following multiple deals notifications.</li>
+              </ul>
+              <img src="img/projects/lev/feedCardStates.png">
+              <h2>Feed Cards Topology</h2>
+              <p>I meticulously crafted the structure of our feed cards to be both versatile and intuitive, accommodating various types of content seamlessly. Each card is designed with distinct colors and icons, ensuring easy recognition—users can quickly spot new terms or updates at a glance.</p>
+              <img src="img/projects/lev/05.png">
               <img src="img/projects/lev/04.png">
 
-              <h2>Feed Cards Topology</h2>
-              <p>We meticulously crafted the structure of our feed cards to be both versatile and intuitive, accommodating various types of content seamlessly. Each card is designed with distinct colors and icons, ensuring easy recognition—users can quickly spot new terms or updates at a glance.</p>
-              <p>Moreover, we've tailored the content of each card to meet specific needs. Some cards are actionable, prompting users to take immediate steps, while others provide essential information without requiring further action. This thoughtful approach enhances user engagement and efficiency within the platform. 🃏🎨📋</p>
-              <img src="img/projects/lev/05.png">
-
               <h2>📊🔍 Lender's analysis Tool</h2>
-              <p>Identifying the perfect lender for our borrowers hinges on our thorough lender analysis. This analysis provides invaluable insights into how lenders operate their business and the types of deals they prefer.</p>
-              <p>By understanding these preferences, we can effectively match lenders with the most suitable deals, ensuring successful partnerships for all parties involved.</p>
+              <p>Identifying the perfect lender for our borrowers hinges on our thorough lender analysis. We needed to deliver an analysis tool to provide invaluable insights into how lenders operate their business and the types of deals they prefer.</p>
+              <p>By understanding these preferences, brokers can effectively match lenders with the most suitable deals, ensuring successful partnerships for all parties involved.</p>
               <img src="img/projects/lev/06.png">
       </div>
     </div>
