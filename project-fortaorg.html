@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8P01XBKVN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R8P01XBKVN');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Stefania Spangenberg</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="project-preview.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+</head>
+<body>
+<div class="projectPage">
+  <div class="header">
+    <img loading="lazy" srcset="img/logo.png" class="img"/>
+    <div class="menu-options">
+      <a href="index.html#seeWork" class="selected">Work</a>
+      <!--<a href="process.html" class="unselected">Process</a>-->
+      <a href="https://www.linkedin.com/in/stefasp/" target="_blank" class="unselected">Experience</a>
+      <a href="#getInContactBox" class="unselected" >Get in contact</a>
+    </div>
+  </div>
+  <div class="full-container">
+      <div class="modal-content">
+          <div class="modal-text">
+            <img src="img/projects/forta/cover.png"/>
+            <div class="title">
+                <h1><span class="highlight">Forta:</span> The largest network of security intel in Web3</h1>
+                <p>ARG 2023</p>
+            </div>
+            <p>Forta is a network and a community of leading security experts contributing to detect scams and threats.</p>
+            <p>They continuously enhance their detection capabilities with machine learning, ensuring heightened efficiency and agility. Incentivizing community participation, they offer rewards to maintain code quality at its zenith. The integrity of their internal economy is upheld through the utilization of the FORT token.</p>
+            <h2>The Goal</h2>
+            <p>Forta had no subscription plans and users could subscribe to any bot and integrate unlimitedly with their own bots. The idea was to offer different plans and prices depending on the user's needs and the use of the software.</p>
+            <p>To support this, we needed to offer 3 different plans: General Data, Special Data and Bot Execution.</p>
+            <p>The bot execution plan was intended for developers and this plan will also have the option to choose how many units they will need to use.</p>
+            <p>The special data plan will have two types of feeds and the user should be able to choose one or both.</p>
+            <p>Users can choose as many plans as they need and upgrade at any time.</p>
+
+            <h2>Brainstorming</h2>
+            <p>The first step was to brainstorm different layouts and also evaluate the ideal flow.</p>
+
+            <img src="img/projects/forta/01.png"/>
+
+            <p>Although it was recommended from a usability point of view that users can purchase several plans at the same time, due to technical difficulties the first version will only support purchasing one plan at a time, and future iterations will be planned to include the purchase of multiple plans.</p>
+            <img src="img/projects/forta/02.png"/>
+
+            <h2>User profile</h2>
+            <p>User’s profile could be empty (with no plan or history) or filled with data.</p>
+            <p>When viewing a bot execution plan, they should see how many units they have available and how many they already have in use.</p>
+            <p>In addition, feedback on the status of the plan was included with alerts to avoid problems such as the automatic cancellation of a plan due to lack of payment (when the user would have wanted to prevent it).</p>
+            <img src="img/projects/forta/03.png"/>
+  
+            <h2>User Flow</h2>
+            <p>These are some interface behaviors and user experience definitions:</p>
+            <ul>
+              <li>User can access payment directly from the plan preview in their profile.</li>
+              <li>User would access payment modal after plan selection</li>
+              <li>If clicking “Buy new plan” the plans already ongoing will not appear in the list</li>
+              <li>Users could access a new API key modal</li>
+            </ul>
+            <img src="img/projects/forta/04.png"/>
+            <img src="img/projects/forta/05.png"/>
+        </div>
+  </div>
+</div>
+</body>

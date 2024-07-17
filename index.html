@@ -114,9 +114,8 @@
 
   <div class="section-title"> Case studies </div>
   <div class="projectsList">
-
       <!--forta preview-->
-      <div class="primary-project forta" id="openFortaModal">
+      <div class="primary-project forta" id="openFortaModal" onclick="redirectToPage('project-fortaorg.html')">
         <div class="div-2">
           <div class="column">
             <div class="div-3">
@@ -134,7 +133,7 @@
         </div>
       </div>
       <!--shiphero preview-->
-      <div class="primary-project shiphero" id="openShipheroModal">
+      <div class="primary-project shiphero" id="openShipheroModal" onclick="redirectToPage('project-shiphero.html')">
         <div class="div-2" id="seeWork">
           <div class="column">
             <div class="div-3">
@@ -152,7 +151,7 @@
         </div>
       </div>
        <!--lev preview-->
-      <div class="primary-project lev" id="openLevModal">
+      <div class="primary-project lev" id="openLevModal" onclick="redirectToPage('project-levcapital.html')">
         <div class="div-2">
           <div class="column">
             <div class="div-3">
@@ -170,7 +169,7 @@
         </div>
       </div>
        <!--fennel preview-->
-      <div class="primary-project fennel" id="openFennelModal">
+      <div class="primary-project fennel" id="openFennelModal" onclick="redirectToPage('project-fennel.html')">
         <div class="div-2">
           <div class="column">
             <div class="div-3">
@@ -188,7 +187,7 @@
         </div>
       </div>
        <!--restorando preview-->
-      <div class="primary-project restorando" id="openRestorandoModal">
+      <div class="primary-project restorando" id="openRestorandoModal" onclick="redirectToPage('project-restorando.html')">>
         <div class="div-2">
           <div class="column">
             <div class="div-3">
@@ -206,7 +205,7 @@
         </div>
       </div>
        <!--timeular preview-->
-      <div class="primary-project timeular" id="openTimeularModal">
+      <div class="primary-project timeular" id="openTimeularModal" onclick="redirectToPage('project-timeular.html')">>
         <div class="div-2">
           <div class="column">
             <div class="div-3">
@@ -303,393 +302,8 @@
   </div>
 </div>
 
-<!--modal de shiphero-->
-<div id="shipheroModalContainer">
-    <div id="shipheroModal" class="modal">
-        <div class="modal-content">
-          <div  class="modal-action-bar"><span class="close" id="closeShipheroModal">&times;</span></div>
-          <div class="modal-text">
-            <img src="img/projects/shiphero/cover.png">
-            <div class="title">
-                <h1><span class="highlight">Shiphero:</span>Enhancing Efficiency in Warehouse Operations</h1>
-                <p>NYC 2020</p>
-            </div>
-            <h2>The Goal</h2>
-            <p>The biggest challenge in this project was to find a flexible flow that would consistently support all the existing picking flows within a warehouse, in addition to solving multiple needs, such as:</p>
-            <ul>
-                <li>Using the scanner is more reliable and effective but, at the same time, exceptions are needed. The scan must be the user's primary path, but administrators must be able to set special permissions.</li>
-                <li>Avoid blocking the entire flow due to an order that cannot be completed. If an order needs to be left aside, do not delay other orders.</li>
-                <li>Avoid blocking the user process due to errors such as empty locations or missing or broken elements.Improve learning curve and efficiency. Users need to use various flows and learn how to use them quickly.</li>
-            </ul>
-            <img src="img/projects/shiphero/01.png">
 
-            <h2>Item's Cards States & Behavior:</h2>
-            <p>The item cards were tailored to accommodate various flows and provide the necessary information at each stage of the process. In the following image, you can see the different states of the card as the user progresses through the flow:</p>
-            <img src="img/projects/shiphero/02.png">
-            <img src="img/projects/shiphero/03.png">
-
-            <h2>Picking Page Topology:</h2>
-            <p>The picking page includes a card that guides users through their next steps, whether it's selecting a specific number of items or assigning a tote (containers used to organize orders).</p>
-            <p>At the top, users will find details about the item to be picked, including its location and the expected quantity.</p>
-            <p>Additionally, users will find other available actions, such as reporting errors if needed. Each action also offers a manual option for situations where a functional scanner is unavailable.</p>
-            <img src="img/projects/shiphero/04.png">
-
-            <h2>Picking Page Card States</h2>
-            <p>This is how the state of the card changes through the flow:</p>
-            <img src="img/projects/shiphero/05.png">
-
-            <h2>Picking Page Examples</h2>
-            <p>These are a few examples of possible states of the page and card</p>
-            <img src="img/projects/shiphero/06.png">
-            <img src="img/projects/shiphero/07.png">
-
-            <h2>Some other pages</h2>
-            <p>The initial image depicts the error reporting page, where users encounter a preview of the item along with a list of error types. After selecting the error type, users are prompted to complete a form with necessary information for submission to the manager. Additionally, the system implements adjustments to prevent future errors, such as temporarily reducing the item quantity to prevent wasted time for other workers.</p>
-            <p>The second image illustrates situations where totes need to be set aside due to errors, such as lack of stock of an item preventing order completion.</p>
-            <p>In the third image, a modal window is displayed for manual tote assignment, along with a page where users can view all pending orders for picking and have the option to delete individual ones.</p>
-            <img src="img/projects/shiphero/08.png">
-            <img src="img/projects/shiphero/09.png">
-            <img src="img/projects/shiphero/10.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--modal de Forta-->
-<div id="fortaModalContainer">
-    <div id="fortaModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-action-bar"><span id="closeFortaModal" class="close">&times;</span></div>
-          <div class="modal-text">
-            <img src="img/projects/forta/cover.png"/>
-            <div class="title">
-                <h1><span class="highlight">Forta:</span> The largest network of security intel in Web3</h1>
-                <p>ARG 2023</p>
-            </div>
-            <p>Forta is a network and a community of leading security experts contributing to detect scams and threats.</p>
-            <p>They continuously enhance their detection capabilities with machine learning, ensuring heightened efficiency and agility. Incentivizing community participation, they offer rewards to maintain code quality at its zenith. The integrity of their internal economy is upheld through the utilization of the FORT token.</p>
-            <h2>The Goal</h2>
-            <p>Forta had no subscription plans and users could subscribe to any bot and integrate unlimitedly with their own bots. The idea was to offer different plans and prices depending on the user's needs and the use of the software.</p>
-            <p>To support this, we needed to offer 3 different plans: General Data, Special Data and Bot Execution.</p>
-            <p>The bot execution plan was intended for developers and this plan will also have the option to choose how many units they will need to use.</p>
-            <p>The special data plan will have two types of feeds and the user should be able to choose one or both.</p>
-            <p>Users can choose as many plans as they need and upgrade at any time.</p>
-
-            <h2>Brainstorming</h2>
-            <p>The first step was to brainstorm different layouts and also evaluate the ideal flow.</p>
-
-            <img src="img/projects/forta/01.png"/>
-
-            <p>Although it was recommended from a usability point of view that users can purchase several plans at the same time, due to technical difficulties the first version will only support purchasing one plan at a time, and future iterations will be planned to include the purchase of multiple plans.</p>
-            <img src="img/projects/forta/02.png"/>
-
-            <h2>User profile</h2>
-            <p>User’s profile could be empty (with no plan or history) or filled with data.</p>
-            <p>When viewing a bot execution plan, they should see how many units they have available and how many they already have in use.</p>
-            <p>In addition, feedback on the status of the plan was included with alerts to avoid problems such as the automatic cancellation of a plan due to lack of payment (when the user would have wanted to prevent it).</p>
-            <img src="img/projects/forta/03.png"/>
-  
-            <h2>User Flow</h2>
-            <p>These are some interface behaviors and user experience definitions:</p>
-            <ul>
-              <li>User can access payment directly from the plan preview in their profile.</li>
-              <li>User would access payment modal after plan selection</li>
-              <li>If clicking “Buy new plan” the plans already ongoing will not appear in the list</li>
-              <li>Users could access a new API key modal</li>
-            </ul>
-            <img src="img/projects/forta/04.png"/>
-            <img src="img/projects/forta/05.png"/>
-        </div>
-    </div>
-  </div>
-</div>
-
-<!--modal de Lev-->
-<div id="levModalContainer">
-    <div id="levModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-action-bar"><span id="closeLevModal" class="close">&times;</span></div>
-          <div class="modal-text">
-            <img src="img/projects/lev/cover.png">
-            <div class="title">
-                <h1><span class="highlight">Lev:</span>Commercial real estate transactions, rebuilt.</h1>
-                <p>NYC 2022</p>
-            </div>
-            <h2>The Goal</h2>
-            <p>Let me give you the lowdown on Lev Marketplace!</p>
-            <p>Our main aim with Lev Marketplace is to connect commercial real estate investors with the perfect lenders for their needs. Our ultimate goal? Ensuring that our clients not only secure more deals but also close them faster and with better terms compared to their competitors.</p>
-            <p>How do we achieve this? By empowering our clients to analyze lenders based on various deal features, seamlessly request quotes, and confidently identify the strengths and weaknesses of each offer. With Lev Marketplace, closing a competitive deal is no longer a shot in the dark—it's a sure thing! 🏢💼</p>
-            <p>Now, let's dive into the nitty-gritty details of our project!</p>
-
-            <h2>📙 Documentation Management</h2>
-            <p>Our primary focus was to ensure seamless and transparent communication between brokers and borrowers within the platform. They collaborate on a range of tasks, including document requests and information sharing from the borrower.</p>
-            <p>We took special care to customize document visibility, recognizing the sensitivity of financial information. With this in mind, brokers, borrowers, and lenders each have their dedicated document tab on the task dashboard. This setup allows for easy access to all shared documents, complete with a specialized search engine to quickly find what they need—all while keeping within the context of the task at hand. 📄🔍</p>
-            <img src="img/projects/lev/01.png">
-            <img src="img/projects/lev/02.png">
-
-            <h2>Deals task dashboard</h2>
-            <p>Let's zoom in on another key aspect of our project:</p>
-            <p>Both brokers and borrowers will have clear visibility into their own pending tasks, as well as those of others. We've made sure to highlight any blocking tasks that may require immediate attention, ensuring smooth progress.</p>
-            <p>Tasks are neatly organized by stage, providing users with a clear overview of their position in the process and what steps come next. This streamlined approach makes it effortless to track progress and stay on top of things every step of the way. 🚀📝</p>
-            <img src="img/projects/lev/03.png">
-
-            <h2>📝 Deal Feed</h2>
-            <p>In order to keep borrowers informed and on track with their transactions, we introduced a dynamic feed where they can stay updated with the latest developments on their deals. This feed provides real-time insights into the status of their transactions, ensuring borrowers are always in the loop and on schedule. 📰🔄</p>
-            <img src="img/projects/lev/04.png">
-
-            <h2>Feed Cards Topology</h2>
-            <p>We meticulously crafted the structure of our feed cards to be both versatile and intuitive, accommodating various types of content seamlessly. Each card is designed with distinct colors and icons, ensuring easy recognition—users can quickly spot new terms or updates at a glance.</p>
-            <p>Moreover, we've tailored the content of each card to meet specific needs. Some cards are actionable, prompting users to take immediate steps, while others provide essential information without requiring further action. This thoughtful approach enhances user engagement and efficiency within the platform. 🃏🎨📋</p>
-            <img src="img/projects/lev/05.png">
-
-            <h2>📊🔍 Lender's analysis Tool</h2>
-            <p>Identifying the perfect lender for our borrowers hinges on our thorough lender analysis. This analysis provides invaluable insights into how lenders operate their business and the types of deals they prefer.</p>
-            <p>By understanding these preferences, we can effectively match lenders with the most suitable deals, ensuring successful partnerships for all parties involved.</p>
-            <img src="img/projects/lev/06.png">
-          </div>
-      </div>
-    </div>
-</div>
-
-<!-- modal de fennel -->
-<div id="fennelModalContainer">
-    <div id="fennelModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-action-bar"><span id="closeFennelModal" class="close">&times;</span></div>
-            <div class="modal-text">
-            <img src="img/projects/fennel/cover.png">
-            <div class="title">
-                <h1><span class="highlight">Fennel:</span> Invest in what you believe</h1>
-                <p>NYC 2023</p>
-            </div>
-            <h2>How did we started?</h2>
-            <p>I worked with Fennel as a freelancer, and they already had a working app in the Apple Store when they reached me to improve their app.</p>
-            <p>I started interviewing their users and tested their app. The open conversation provided me with general information and feedback, allowing me to detect which moments users remembered as most frustrating and context about when they used the app and why.</p>
-            <p>Then, the team had specific flows that they feared were the weakest or most relevant at a business level, we focused on testing these with specific tasks.</p>
-            <p>This allowed me to get to know different types of users and what type of use they gave or expected to give to the app, how it failed them, and how it helped them as investors.</p>
-            <p>With the results, I wrote a UX report, including priority criteria according to how blocking the issue was and a chapter with recommendations. After the team's review, several projects followed, in which we modified different parts of the experience.</p>
-            <img src="img/projects/fennel/01.png">
-
-            <h2>Onboarding</h2>
-            <p>Although the onboarding process was not tested, some users shared some of their experiences while in this process:</p>
-            <ul>
-              <li>The onboarding process requests very sensitive financial information from the user in a very early stage. They don't know much about the product and they don't trust the app yet either. The barrier is very high in the very initial stage. I recommend offering the trial experience without this information, then if the user wants to buy a share or wants to subscribe we should request it.</li>
-              <li>A user comments that if it wasn't that he knew the Fennel team, he would not have spent the time required to go through the onboarding and would not have chosen to expose such personal information.</li>
-              <li>Observing bugs and errors during this onboarding process discourages them from continuing since they would expect the app to have more bugs and errors.</li>
-              <li>The subscription method generates doubts and mistrust. The fact that the subscription form is outside the App Store / Google Play can create distrust and make them feel out of control. A user told me that in the onboarding the subscription is signed and this is paid with transfers directly to his bank account. The confidence and control that a user gains when subscribing through the store are missing in this way.</li>
-            </ul>
-            <p>To improve the onboarding experience the following changes were made:</p>
-            <ul>
-              <li>The user could create an account to try the app for free, avoiding having to share financial information and compromise too soon.</li>
-              <li>In the free trial, the user could see how the app would look like with data, or design the UI to be more clear about the sections even if they are empty, so they can understand the value and the features Fennel will provide them with.</li>
-            </ul>
-            <p>Also:</p>
-            <ul>
-              <li>Some portfolio fixes were made: some information was clarified, such as how volatile the portfolio was, how it changed compared to a past period, and how the data updates worked.</li>
-              <li>Increasing visibility and learnability of valuable features with coachmarks. Some features were more difficult to discover and some even needed some explanation due to how technical they were. We learned which of these features were highly used by heavy users so, we concluded it was worth including these quick tips for new users.</li>
-            </ul>
-            <img src="img/projects/fennel/02.png">
-            <div class="gif-container"><img src="img/projects/fennel/03.gif"></div>
-            <div class="two-columns">
-              <div class="img-half"><img src="img/projects/fennel/04.png"></div>
-              <div class="text-half">
-                <h2>Search Experience</h2>
-                <p>Several issues were discovered, some of them were:</p>
-                <ul>
-                  <li>Without my direct indication (in the user testing) users couldn't discover the filters and table-customization page. For this, a sticky bar with the filters was created, if the user wanted to add multiple filters (or apply less relevant filters) they could access the filter page or, if wanting to apply one of the most used filters, they could access them through the shortcut in the sticky bar.</li>
-                  <li>When seeing results, users found annoying and time-consuming that it wasn't possible to see more information about the companies from the listing view. They needed to visit each company profile. To compare companies the user has to go in and out of the profiles and try to remember the information they see. For this issue, I designed a results view where items could be expanded or collapsed while adding also a shortcut to open and close all results at once. The most basic information was prioritized, while secondary information could be seen when seeing the expanded view.</li>
-                </ul>
-              </div>
-            </div>
-            <img src="img/projects/fennel/05.png">
-            <div class="gif-container"><img src="img/projects/fennel/06.gif"></div>
-
-            <h2>Company Profile</h2>
-            <p>I found several issues to address, some of them were:</p>
-            <ul>
-              <li>There is too much information in the profiles and it was difficult for them to get to any conclusion. Knowing what kind of information about the company was available took a lot of effort, they needed to scroll through the entire profile. For these, a menu was added and each section of the profile was approached separately to simplify readability.</li>
-              <li>ESG Wheel: The information in the tooltip that opens when you click on the functions does not provide much information. What other details can be said about that feature? </li>
-              <li>It was very difficult to know if a score is positive or negative. That number is not clear and absolutely all users had to read the tooltip to understand that it is relative to the industry. The information on the card also does not help them understand how good or bad the company is rated and why is it different from others. For these, the comparison with the benchmark or the industry was clarified plus the answer of the category (for example, Carbon emissions are low, and that is uncommon in the industry)</li>
-              <li>To learn about the existing categories they have to click on each circle and read the name. The user cannot easily have a global idea of the categories and their score. Having to click on all of them implies a lot of effort. For these the cards were redesigned, they had a collapsed view with a summary of the answer and how they are compared to the industry, and then they could see more details when opened.</li>
-              <li>The type of graph does not allow to quickly visualize the most relevant factors for the user and to visualize in which it stands out, it does not facilitate the comparison. To fix this issue I used color to refer to the category of the topic, for example, all environmental topics are green.</li>
-              <li>The information provided had different formats depending on the card, which was very confusing, and took too much effort to understand what the result meant. All cards were changed to have the same format and keep consistency.</li>
-              <li>It would be interesting to incorporate the date on which the company announces earnings since some users use this date as a reference to buy shares.</li>
-            </ul>
-            <img src="img/projects/fennel/07.png">
-
-            <div class="two-columns">
-              <div class="img-half"><img src="img/projects/fennel/08.png"></div>
-              <div class="text-half">
-                <h2>Porfolio's graph redesign</h2>
-                <p>The performance graphic was redesigned to fix the following issues:</p>
-                <ul>
-                  <li>The color used in the graph is green or red depending on whether the last value went down or up compared to the starting point.</li>
-                  <li>There is no time reference, what is the starting date? what is the finish date?</li>
-                  <li>There is no data on when the last update was, once the portfolio is loaded the data is not updated again until the next load or refresh. On the other hand, if the market is closed, the data is from the last information received when it was active.</li>
-                  <li>The control to change the period looks a little lost and goes unnoticed, even appearing to be part of the graph.</li>
-                  <li>By clicking on the graph you see the only comparative reference, which is a line.</li>
-                </ul>
-              </div>
-            </div>
-            <img src="img/projects/fennel/09.png">
-        </div>
-    </div>
-  </div>
-</div>
-
-<!-- modal de restorando -->
-<div id="restorandoModalContainer">
-    <div id="restorandoModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-action-bar"><span id="closeRestorandoModal" class="close">&times;</span></div>
-            <div class="modal-text">
-            <img src="img/projects/restorando/cover.png">
-            <div class="title">
-                <h1><span class="highlight">Restorando:</span> Find the right restaurant</h1>
-                <p>Argentina, 2018</p>
-            </div>
-            <h2>The Goal</h2>
-            <p>IThe problem we had to solve was to reduce the bounce rate on the profile screen of the restaurants, where most of our traffic is.</p>
-            <p>Of the 4 possible platforms that we have, we decided to focus on mobile web since, as you can see in the following chart, it is the platform with the highest growth in the last 4 years. On the other hand, it also offers an agility that native apps don’t, allowing us to validate, experiment and test faster.</p>
-            <p>Most of our users spend less than 3 seconds on the restaurant’s profile screen, a clear sign that we were not meeting their needs, but why?</p>
-            <img src="img/projects/restorando/01.png">
-            <p>So far the site had a transactional approach, encouraging the user to book. So, the first thing you saw in a restaurant profile was the text “Book for free” and the “See availability” button.</p>
-            <p>We decided to ask ourselves the following question: What is the problem that users need to solve when they arrive at Restorando? What is their Job To Be Done (problem or task that a person needs to perform)?</p>
-            <img src="img/projects/restorando/02.png">
-
-            <h2>Research: Initial survey</h2>
-            <p>We surveyed the users that arrived to the restaurant profile page. The question we asked was: what do you want to do? And we offered them the tasks that we thought were the most relevant, allowing them to add additional options if necessary:</p>
-            <ul>
-              <li>Find where to eat.
-              <li>Book a table</li>
-              <li>Find specific information about a restaurant</li>
-              <li>Other</li>
-            </ul>
-            <p>To those who answered “Book a table” we also asked if they already knew where they wanted to eat, and to those who were looking for information about a restaurant we asked them how flexible they were to change places if the restaurant couldn’t accommodate them. The results were the following:</li></p>
-            
-            <img src="img/projects/restorando/03.png">
-            <p>As you can see, almost 60% of our users want to go out for dinner and have not yet decided where (Find + Book but don’t know where) and 20% of those who do know (5% of total traffic) are willing to change the restaurant they had chosen initially if there is no availability.</p>
-            <p>Summarizing: almost two-thirds of our users visit to our web app without knowing where to eat and evaluating the restaurant they searched. Our job is, then, to help them make that decision on the restaurant’s profile screen.</p>
-
-            <h2>Storyboard</h2>
-            <p>In order to devise solutions, we created a storyboard that helped us understand the micro-moments of the user that needs to know if a restaurant is good for them.</p>
-            <img src="img/projects/restorando/04.png">
-            
-            <h2>Surveys</h2>
-            <img src="img/projects/restorando/05.png">
-            <p>So, How do users know if a place is good for them? We published new surveys to understand what information was relevant to our users and whether they could find it on the site or not. These were some of the learnings:</p>
-            <ul>
-              <li>The zone is the most searched information on mobile web and the vast majority finds it.</li>
-              <li>Prices is the second most relevant and almost half of the users don’t find them.</li>
-              <li>Menu and photos are similarly searched and mostly found.</li>
-              <li>They are also looking for a telephone number to contact the restaurant, but we didn’t give that option.</li>
-              <li>Finally, the reviews of the place.</li>
-              <li>The variable that users are less willing to change is the day.</li>
-            </ul>
-
-            <div class="two-columns">
-              <div class="img-half"><img src="img/projects/restorando/06.png"/></div>
-              <div class="text-half">
-                <h2>Heatmaps</h2>
-                <p>In addition, we created heatmaps that enabled us to understand the current use of the restaurant’s profile. Some of the most relevant observations were:</p>
-                <ul>
-                  <li>The photo section is the most clicked. Even if in the surveys users didn’t say they were looking for photos, by looking at the events and heatmaps we can see that it is one of the most performed actions. That is why it is important to combine different sources of information, qualitative and quantitative. (What users say is not the same to what they do!)</li>
-                  <li>sers interact with the detail items (price, schedule, payment methods and food). We could assume that they want to see more information about each of these items.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="two-columns">
-              <div class="img-half"><img src="img/projects/restorando/07.png"/></div>
-              <div class="text-half">
-                <h2>Formulate Hipotesis</h2>
-                <p>With all the collected information we made a first low quality prototype, reformulating the hierarchy and architecture of the information. Also, we write down doubts about the solution to answer them in the test with users.</p>
-              </div>
-            </div>
-            <h2>Validate with users</h2>
-            <p>To validate the hypothesis we created different versions of the same strategy so that we could find weaknesses and strengths in each design. By defining different real life scenarios we were able those how the designs work for each use case.</p>
-            <img src="img/projects/restorando/08.png"/>
-            <p>SPrevious to the usability tests with prototypes, we usually do an interview where we inquire about the problem we are working on. In this way we can understand the user’s needs, frustrations and get information to analyze their behavior in the user test.</p>
-            <p>We also use this information to adapt the task and scenarios to the users, so that they feel more represented and their actions become more natural. Some learnings:</p>
-            <ul>
-              <li>The new information’s hierarchy was a success, users could quickly find the basic information. They felt more comfortable with more spaced interfaces.</li>
-              <li>When you have to wait for your table to be ready, the whole moment of chilling and romance is ruined; and children get anxious. However, if you are going out with a group of friends, waiting becomes less annoying. This is certainly good for us because the reservation is useful and it helps people having better moments when they dine out.</li>
-              <li>The location of the table is important, if it’s bad people feel uncomfortable and can’t relax. Some of the bad locations that users tell us about are: a noisy place, near the door, down the air conditioner, next to the bathroom. This is a possible problem we could work in the future.</li>
-              <li>Noise is one of the biggest complaints, it means having to shout, having difficulties listening, it creates a climate of annoyance. It is a factor that may imply discarding the place.</li>
-              <li>» The type of food is good but they want to see it in detail, even a list of words related to food was not enough; but the full menu was very useful.</li>
-              <li>The opening hours were seen in detail by the users. They want to know if they can eat with time or if the kitchen is about to close.</li>
-              <li>The price is really relevant when it comes to choosing where to dine. Knowing the average price was very useful for deciding, however there were doubts about the price already including the discount or not. For some users the benefits are very important, but in general it is not exclusive to choose.</li>
-              <li>The pictures provide a lot of information, like the type of food, the space, and what facilities does the restaurant offers. Having few pictures or providing one’s that don’t give information does not allow users to make a decision.</li>
-              <li>The stars do not provide enough information to compare, the numeric rating allows to see more differences. The number of reviews that affect the score is an important factor when prioritizing options, especially in cases where there are very few qualifications.</li>
-              <li>Users read at least 5 of the latest ratings. If they see several complaints they discard the place. If they see a low rating, they read the comments to see if it’s just one or there’s more. They evaluate if the complaints have or not sense for them. If the restaurant fails in aspects that are relevant to the user, and if there are several complaints about the place, they discard it as an option.</li>
-              <li>Comments with poor content do not help in making a decision and is frustrating. To know whether a place is good or not, they have to see if the amount of positive reviews is higher than negative ones.</li>
-            </ul>
-            <h2>Iterate and Define</h2>
-            <p>After all the learning we made in the tests with users and interviews, we iterated the designs in order to avoid and solve their frustrations. Having the final idea we made a limited version that was easy to implement. We apply the improvements in the restaurant’s profile and in the results page, in order to maintain consistency in the site. This way we could finish validating with the use, if these changes were a solution to the problems of our users.</p>
-            <img src="img/projects/restorando/09.png"/>
-            <h2>Test and measure results</h2>
-            <p>We validated our solution with an A / B Test against the previous version, comparing session time and conversion. The first positive result we see is that the session time increased and the bounce rate decrease.</p>
-            <img src="img/projects/restorando/10.png"/>
-            <p>The most important result is that users who saw the new version converted 24% more than those who visited the old version. A great success! ✊</p>
-    </div>
-  </div>
-</div>
-
-<!-- modal de Timeular -->
-<div id="timeularModalContainer">
-    <div id="timeularModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-action-bar"><span id="closeTimeularModal" class="close">&times;</span></div>
-            <div class="modal-text">
-            <img src="img/projects/timeular/cover.png"/>
-            <div class="title">
-                <h1><span class="highlight">Timeular:</span> meet your goals</h1>
-                <p>Austria 2021</p>
-            </div>
-            <h2>The goal</h2>
-            <p>Timeular is helping people gain valuable insight into how they spend their time and increase productivity. <br>This new feature is meant to help our users to:</p>
-            <ul>
-              <li>Clearly set their goals.</li>
-              <li>Choose how progress will be measured.</li>
-              <li>Accomplish their goals or get insights to help them if not.</li>
-            </ul>
-
-            <h2>Brainstorming</h2>
-            <p>Our initial step was to brainstorm potential and realistic goals to identify different types and their structures. <br>Through this process, we categorized the goals as follows: </p>
-            <ul>
-              <li>Goals aimed at scheduling tasks or activities.</li>
-              <li>Goals designed to commit to achieving specific outcomes or results.</li>
-              <li>Goals focused on dedicating a set number of hours towards a particular activity or endeavor.</li>
-            </ul>
-            <p>By categorizing goals in this manner, users can better understand how to set up their goals with clear outcomes and commitments.</p>
-            <img src="img/projects/timeular/01.png"/>
-
-            <h2>Prototype and user testing</h2>
-            <p>Armed with this valuable insight, I proceeded to develop a comprehensive solution capable of accommodating all potential scenarios. I created an interactive prototype to test with users, beginning with interviews to gain a deeper understanding of their real-life challenges and time-management needs.</p>
-            <p>During these interviews, I presented users with hypothetical scenarios to gauge their interaction with the prototype's goals feature. Each session concluded with an open discussion, inviting users to provide feedback on their experience and how they perceived the feature's effectiveness. This iterative process ensured that the final solution was both user-centric and optimized for  real users needs.</p>
-            <img src="img/projects/timeular/02.png"/>
-
-            <h2>Creating Feature MVP</h2>
-            <p>We opted to roll out the functionality with the essential features required to meet the predominant user need, primarily centered around reaching a specific number of hours. Consequently, we concentrated solely on launching this type of goal initially, aiming to collect feedback and insights into its efficacy and utility with this initial version.</p>
-            <img src="img/projects/timeular/03.png"/>
-
-            <h2>Card Behavior</h2>
-            <p>Depending on the goal's setup and status, the card will display varying information. For instance, if a deadline is set, the goal visualization will appear as a counter; otherwise, users will see a progress bar. Furthermore, the text content will be customized based on each specific scenario.</p>
-            <img src="img/projects/timeular/04.png"/>
-
-            <h2>Mobile App</h2>
-            <p>Finally, this functionality needed to be available on mobile devices as well, so the designs were adapted for the mobile app accordingly.</p>
-            <img src="img/projects/timeular/05.png"/>
-        </div>
-    </div>
-  </div>
-</div>
-
-<script src="modalShiphero.js"></script>
-<script src="modalForta.js"></script>
-<script src="modalLev.js"></script>
-<script src="modalFennel.js"></script>
-<script src="modalRestorando.js"></script>
-<script src="modalTimeular.js"></script>
+<script src="redirect.js"></script>
 
 </body>
 </html>

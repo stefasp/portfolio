@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8P01XBKVN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R8P01XBKVN');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Stefania Spangenberg</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="project-preview.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+</head>
+<body>
+<div class="projectPage">
+  <div class="header">
+    <img loading="lazy" srcset="img/logo.png" class="img"/>
+    <div class="menu-options">
+      <a href="index.html#seeWork" class="selected">Work</a>
+      <!--<a href="process.html" class="unselected">Process</a>-->
+      <a href="https://www.linkedin.com/in/stefasp/" target="_blank" class="unselected">Experience</a>
+      <a href="#getInContactBox" class="unselected" >Get in contact</a>
+    </div>
+  </div>
+  <div class="full-container">
+      <div class="modal-content">
+          <div class="modal-text">
+            <img src="img/projects/shiphero/cover.png">
+            <div class="title">
+                <h1><span class="highlight">Shiphero:</span>Enhancing Efficiency in Warehouse Operations</h1>
+                <p>NYC 2020</p>
+            </div>
+            <h2>The Goal</h2>
+            <p>The biggest challenge in this project was to find a flexible flow that would consistently support all the existing picking flows within a warehouse, in addition to solving multiple needs, such as:</p>
+            <ul>
+                <li>Using the scanner is more reliable and effective but, at the same time, exceptions are needed. The scan must be the user's primary path, but administrators must be able to set special permissions.</li>
+                <li>Avoid blocking the entire flow due to an order that cannot be completed. If an order needs to be left aside, do not delay other orders.</li>
+                <li>Avoid blocking the user process due to errors such as empty locations or missing or broken elements.Improve learning curve and efficiency. Users need to use various flows and learn how to use them quickly.</li>
+            </ul>
+            <img src="img/projects/shiphero/01.png">
+
+            <h2>Item's Cards States & Behavior:</h2>
+            <p>The item cards were tailored to accommodate various flows and provide the necessary information at each stage of the process. In the following image, you can see the different states of the card as the user progresses through the flow:</p>
+            <img src="img/projects/shiphero/02.png">
+            <img src="img/projects/shiphero/03.png">
+
+            <h2>Picking Page Topology:</h2>
+            <p>The picking page includes a card that guides users through their next steps, whether it's selecting a specific number of items or assigning a tote (containers used to organize orders).</p>
+            <p>At the top, users will find details about the item to be picked, including its location and the expected quantity.</p>
+            <p>Additionally, users will find other available actions, such as reporting errors if needed. Each action also offers a manual option for situations where a functional scanner is unavailable.</p>
+            <img src="img/projects/shiphero/04.png">
+
+            <h2>Picking Page Card States</h2>
+            <p>This is how the state of the card changes through the flow:</p>
+            <img src="img/projects/shiphero/05.png">
+
+            <h2>Picking Page Examples</h2>
+            <p>These are a few examples of possible states of the page and card</p>
+            <img src="img/projects/shiphero/06.png">
+            <img src="img/projects/shiphero/07.png">
+
+            <h2>Some other pages</h2>
+            <p>The initial image depicts the error reporting page, where users encounter a preview of the item along with a list of error types. After selecting the error type, users are prompted to complete a form with necessary information for submission to the manager. Additionally, the system implements adjustments to prevent future errors, such as temporarily reducing the item quantity to prevent wasted time for other workers.</p>
+            <p>The second image illustrates situations where totes need to be set aside due to errors, such as lack of stock of an item preventing order completion.</p>
+            <p>In the third image, a modal window is displayed for manual tote assignment, along with a page where users can view all pending orders for picking and have the option to delete individual ones.</p>
+            <img src="img/projects/shiphero/08.png">
+            <img src="img/projects/shiphero/09.png">
+            <img src="img/projects/shiphero/10.png">
+            </div>
+        </div>
+</div>
+</body>

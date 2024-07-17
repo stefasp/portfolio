@@ -10,7 +10,9 @@
   background-color: rgba(0,0,0,0.5); /* Semi-transparent black overlay */
   z-index: 999999;
 }
-
+.projectPage .header{
+  z-index: 99999999 !important;
+}
 .modal-content {
     height: 80%;
     overflow-y: scroll;

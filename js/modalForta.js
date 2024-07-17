@@ -10,6 +10,8 @@ var spanFort = document.getElementById("closeFortaModal");
 // When the user clicks the div, open the modal 
 divFort.onclick = function() {
   modalFort.style.display = "block";
+function redirectToPage(url) {
+    window.location.href = url;
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -23,4 +25,3 @@ window.onclick = function(event) {
     modalFort.style.display = "none";
   }
 }
-
