@@ -78,6 +78,13 @@ body{
   object-position: center;
   width: 75px;
 }
+.footer{
+  font-size: 14px;
+  background: #fff;
+  padding: 22px;
+  color: #8e8c93;
+  text-align: center;
+}
 .menu-options {
   width: auto;
   justify-content: end;
