@@ -45,12 +45,24 @@
                 <p>NYC 2020</p>
             </div>
             <h2>The Goal</h2>
-            <p>The biggest challenge in this project was to find a flexible flow that would consistently support all the existing picking flows within a warehouse, in addition to solving multiple needs, such as:</p>
+            <p>Our aim was to rebuild the picking flows and related workflows to make daily tasks more accessible and consistent. Previously, elements varied too much across different pages and flows, making the process messy and difficult to navigate. By streamlining these workflows, we aimed to improve the learning curve and efficiency, ensuring that users could quickly adapt to various flows.</p>
+            <p>Additionally, several critical needs had to be addressed:</p>
             <ul>
-                <li>Using the scanner is more reliable and effective but, at the same time, exceptions are needed. The scan must be the user's primary path, but administrators must be able to set special permissions.</li>
-                <li>Avoid blocking the entire flow due to an order that cannot be completed. If an order needs to be left aside, do not delay other orders.</li>
-                <li>Avoid blocking the user process due to errors such as empty locations or missing or broken elements.Improve learning curve and efficiency. Users need to use various flows and learn how to use them quickly.</li>
+                <li>Scanner Flexibility: The scanner was always mandatory, which created issues. We needed to allow exceptions where necessary. While scanning should remain the primary path, administrators must be able to set special permissions.</li>
+                <li>Minimizing Workflow Blockages: Orders that couldn’t be completed should not halt the entire process. If an order needs to be set aside, it shouldn’t delay other orders.</li>
+                <li>Error Management: User processes should not be blocked by errors such as empty locations, or missing or broken items.</li>
             </ul>
+            <h2>Page Structure Refactor:</h2>
+            <p>Through extensive research on existing picking flows, we identified three fundamental page structures:</p>
+            <ul>
+                <li>A page where the user selects the number of totes or orders to pick.</li>
+                <li>A page where users can preview orders.</li>
+                <li>A page where users can preview items.</li>
+            </ul>
+            <p>These pages were redesigned to allow for easy customization, making them adaptable for use in any picking flow or other application scenarios.</p>
+            <strong>Basic Page Structures for Flows</strong>
+            <img src="img/projects/shiphero/00.png">
+            <strong>Picking Flows: Pages and Instances</strong>
             <img src="img/projects/shiphero/01.png">
 
             <h2>Item's Cards States & Behavior:</h2>
