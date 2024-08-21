@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8P01XBKVN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R8P01XBKVN');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Stefania Spangenberg</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="project-preview.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+</head>
+<body>
+  <div class="projectPage">
+    <div class="header">
+    <img loading="lazy" srcset="img/logo.png" class="img" onclick="redirectToPage('index.html')"/>
+    <div class="menu-options">
+      <a href="index.html#seeWork" class="selected">Work</a>
+      <!--<a href="process.html" class="unselected">Process</a>-->
+      <a href="https://www.linkedin.com/in/stefasp/" target="_blank" class="unselected">Experience</a>
+      <a href="#getInContactBox" class="unselected" >Get in contact</a>
+    </div>
+  </div>
+    <div class="full-container">
+      <div class="modal-content">
+          <div class="modal-text">
+              <img src="img/projects/android/cover.png">
+              <div class="title">
+                  <h1><span class="highlight">Restorando:</span> Improving Android's users Search Experience</h1>
+                  <p>Argentina, 2018</p>
+              </div>
+              <h2>Understanding User Behavior Through Data Insights</h2>
+              <p>After conducting an in-depth analysis of search insights across various platforms, several key user behaviors were identified:</p>
+              <ul>
+                <li>90% of users search for restaurants to eat at on the same day. This suggests that complicating the date selection process with a full calendar may not be necessary at the initial stage.</li>
+                <li>While users are generally unwilling to change the day they plan to go out, they are more flexible with the type of cuisine and the time of their visit.</li>
+                <li>There is a significantly higher interest in promotions among Android users compared to iOS users.</li>
+                <li>Users tend to include multiple variables in their searches. iOS users are more likely to use advanced search queries, which could explain why the conversion rate is lower on Android. There may be a relationship between the use of advanced search and conversion rates.</li>
+              </ul>
+              
+              <h2>User Testing Insights</h2>
+              <p>We asked users to search using the current app and a few prototypes to identify areas for improvement, and several important observations were made:</p>
+              <ul>
+                <li>Users often select multiple filters without realizing that each additional filter reduces the number of results. This led to frustration when users found that almost no options were available after specifying their preferences.</li>
+                <li>Many users who search by typing do not recognize that there is a specific filter for certain categories. For example, searching for a neighborhood as text does not yield the same results as selecting it as a neighborhood category.</li>
+                <li>Users found it much easier to choose between today, tomorrow, or another day compared to using a full calendar.</li>
+              </ul>
+
+              <h2>Cultural Insights from Interviews and Surveys</h2>
+              <p>Based on interviews and surveys, we uncovered important regional differences:</p>
+              <ul>
+                <li>Dining Out Habits: In Brazil, dining out is more common, with 44% of respondents dining out more than eight times a week, compared to 44% of Argentinians who do so two to four times a week.</li>
+                <li>Meal Importance: In Brazil, lunch is as important as dinner, with 87% of respondents eating both lunch and dinner out, compared to Argentina, where 99% dine out for dinner, but only 41% for lunch. This suggests that creating collections for lunch in Brazil and giving equal importance to understanding lunch as a dining occasion could be valuable.</li>
+              </ul>              
+              <h2>Benchmarking Existing Mobile Search Experiences</h2>
+              <p>A benchmark analysis of existing search experiences on mobile revealed the following patterns:</p>
+              <ul>
+                <li>Search categories or the minimal necessary options to trigger the search are typically presented first, with advanced filters only available on the results screen.</li>
+                <li>Filter access is always visible in the results page.</li>
+                <li>Tappable buttons are commonly used for selecting multiple variables.</li>
+                <li>If the search involves selecting a region, it is clearly presented on the filter screen or the initial screen, and is pre-filled based on geolocation.</li>
+              </ul>
+              <img src="img/projects/android/benchmark.png">
+              <h2>Proposed Improvements to the Search Experience</h2>
+              <p>Based on the insights gathered, I developed an enhanced search experience with the following key improvements:</p>
+              <ul>
+                <li>The first selection option is the neighborhood, with "Near Me" as the default choice.</li>
+                <li>Shortcuts to other relevant filters, such as date, discounts, cuisine, style, and online reservations, are displayed below the neighborhood selection.</li>
+                <li>The date filter is set to "Today" by default, with the option to quickly modify or select a different date.</li>
+                <li>The difference between discounts and price was made clearer, as the prospect of getting a discount increases user interest, even if the final amount spent is the same.</li>
+                <li>Filters are visible and sticky at the top of the page. They collapse when scrolling down to maximize the results area but fully expand again when scrolling up.</li>
+                <li>When the user types, we suggest matching restaurant names, food types, and neighborhoods based on the search. This approach allows users to search any filter by typing while delivering more accurate results compared to free-text searches.</li>
+                <li>When tapping on the search box, users are shown their search history, making it easy to repeat past searches (often, restaurant names are searched by name).</li>
+              </ul>
+              <img src="img/projects/android/flow.png"/>
+              <img src="img/projects/android/microinteractions.png"/>
+              <h2>Impact on Product Metrics</h2>
+              <p>After launching this new version for Android users, we observed the following changes in product metrics:</p>
+              <ul>
+                <li>Searches Increased by 8%</li>
+                <li>Interactions with Results Increased by 11%</li>
+                <li>Conversions (bookings) Increased by 12%</li>
+                <li>Nearly Twice as Many Users Added a Second Filter</li>
+              </ul>
+              <p>This case study highlights how data-driven design decisions can significantly enhance user experience and drive better business outcomes.</p>
+              <p>Building on these learnings and the impressive results, similar enhancements were implemented across other platforms, including improvements to the mobile web, web and iOS search experience. These refinements ensure a consistent, optimized experience for all users, further driving engagement and conversions.</p>
+              <img src="img/projects/android/vsios.png"/>
+              <img src="img/projects/android/web.png"/>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">Developed & Designed by Stef with ♥</div>
+
+<script src="redirect.js"></script>
+</body>
+</html>

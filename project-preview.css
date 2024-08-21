@@ -136,6 +136,9 @@
 .thumbnailList .list img{
   width: 100%;
 }
+.thumbnailList .img.clickable{
+  cursor: pointer;
+}
 .thumbnailList .list .img.large{
   /*width: 49.5%;*/
   flex: 2;
