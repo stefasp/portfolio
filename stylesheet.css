@@ -41,6 +41,7 @@ html, body {
 }
 
 body{
+  line-height: 1.5rem;
   color: #292B4A;
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
@@ -167,10 +168,10 @@ body{
 .hero .hey img{
   width: 100%;
 }
-.modal-content strong{
+/*.modal-content strong{
     display: block;
     margin: 25px 0 0;
-}
+}*/
 .hero .img {
   position: absolute;
   inset: 0;
