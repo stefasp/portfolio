@@ -78,6 +78,7 @@ body{
   object-fit: auto;
   object-position: center;
   width: 75px;
+  cursor: pointer;
 }
 .footer{
   font-size: 14px;
