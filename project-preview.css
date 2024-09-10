@@ -22,6 +22,18 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
+.primary-project .projectTags{
+  display: flex;
+  margin-bottom: 10px;
+}
+.primary-project .projectTags > div{
+  margin-right: 6px;
+  font-size: 13px;
+  border-radius: 77px;
+  display: block;
+  padding: 0px 9px;
+  background: #313a6317;
+}
 .primary-project.shiphero{
   background-color: #d0ddff;
   background-image: url(img/projects/ShipHero.png);
@@ -73,7 +85,7 @@
   flex-grow: 1;
   flex-direction: column;
   color: var(--NewBlack, #292b4a);
-  margin-top: 38px;
+  margin-top: 23px;
 }
 .primary-project .div-4,
 .primary-project .textContainer,
