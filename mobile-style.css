@@ -32,6 +32,9 @@
   .primary-project .projectAction{
     display: none;
   }
+  .about-me {
+    display: none;
+  }
 }
 
 /* a partir de aca los projectos son a 1 renglon */
@@ -119,11 +122,6 @@
   }
   .section-title{
     padding: 10px 20px;
-  }
-  .about-me {
-    display: none;
-    max-width: 100%;
-    padding: 20px;
   }
   .about-me .div-2,
   .about-me .column {

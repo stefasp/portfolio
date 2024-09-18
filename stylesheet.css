@@ -273,8 +273,8 @@ body{
   width: 100%;
 }
 .about-me .column img{
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 .about-me .preview{
   align-items: center;
@@ -283,7 +283,7 @@ body{
   transition: opacity 0.5s ease;
 }
 .about-me .preview .title{
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 .about-me .preview:hover .description{
   opacity: 1; /* Make the element visible on hover */
