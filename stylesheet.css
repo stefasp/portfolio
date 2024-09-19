@@ -96,10 +96,10 @@ body{
   margin: auto 0;
 }
 .menu-options .selected{
-  color: var(--Purple-Light, #ac9ee3);
+  color: #6A50F0;
 }
 .menu-options a:hover{
-  color: var(--Purple-Light, #ac9ee3);
+  color: #6A50F0;
 }
 .menu-options a {
   padding: 1%;
@@ -121,12 +121,14 @@ body{
   justify-content: space-between;
 }
 .hero .container {
-  justify-content: center;
   margin: auto 0;
-  padding: 0 60px;
+  padding: 30px 60px;
   width: 100%;
-  text-align: center;
-  background: url(img/bg.png);
+  text-align: left;
+  background-image: url(img/bgHeroBlueCircle.png), url(img/bgHeroPurpleCircle.png);
+  background-position: bottom right, top right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto;
 }
 .hero .div-4 {
   gap: 20px;
@@ -138,10 +140,10 @@ body{
   line-height: normal;
   margin-left: 0px;
 }
-.hero .column-2 {
+.hero .heroText {
   flex-grow: 2;
   line-height: normal;
-  margin: 60px 0;
+  margin: auto;
 }
 .hero .lefty {
   display: flex;
@@ -150,10 +152,13 @@ body{
   padding: 2px 0;
 }
 .hero .righty {
-  display: flex;
   flex-grow: 1;
   flex-direction: column;
   padding: 2px 0;
+  text-align: right;
+}
+.hero .righty img{
+  width: 75%;
 }
 .hero .polaroid {
   overflow: hidden;
@@ -250,25 +255,29 @@ body{
   text-align: center;
   margin: auto 0;
 }
-.hero .div-19 {
-    align-self: center;
-    font-size: 5rem;
+.hero .title {
+    text-align: left;
+    font-size: 3rem;
     font-weight: 400;
 }
 .hero .description {
+  text-align: left;
   margin-top: 6px;
   line-height: 1.6;
 }
 
 .about-me {
-  background-color: var(--Purple-soft, #c3c5e9);
+  background-image: url(img/bgFeatures.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
   width: 100%;
   padding: 20px 20px;
   display: table;
 }
 .about-me .div-2,
 .about-me .column {
-  gap: 20px;
+  gap: 13px;
   display: flex;
   width: 100%;
 }
@@ -307,7 +316,7 @@ body{
 }
 .about-me .preview{
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: #fff;
   display: flex;
   flex-grow: 1;
@@ -346,13 +355,12 @@ body{
 .section-title{
     line-height: 2.5rem;
     font-size: 2.1rem;
-    padding: 33px 20px;
+    padding: 50px 20px 30px;
     text-align: center;
 }
 
 .contactBox{
   margin: auto 0;
-  padding: 0 60px 50px 0;
   width: 100%;
   text-align: center;
   background: url(img/bgContact.png);
@@ -360,13 +368,21 @@ body{
   flex-wrap: nowrap; /* Ensure items stay in a single row */
   gap: 4%;
 }
+.contactBox .itemsList{
+  padding: 0 0 30px;
+}
 .contactBox .title{
     font-size: 2rem;
+    line-height: 2.5rem;
     margin: 31px 0;
 }
 .contactBox .columnLeft{
   flex: 1;
   margin: auto;
+  text-align: right;
+}
+.contactBox .columnLeft img{
+      width: 70%;
 }
 .contactBox .columntRight{
   flex: 1;
@@ -379,21 +395,20 @@ body{
 }
 .contactBox .item .linkBox,
 .contactBox .item a{
-    display: inline-flex;
-    opacity: 0.7;
-    font-size: 0.9rem;
-    color: #292B4A;
-    text-decoration: none;
-    box-sizing: border-box;
-    flex-direction: row;
-    align-items: center;
-    padding: 1% 2%;
-    gap: 5px;
-    width: auto;
-    height: 42px;
-    background: rgba(255, 255, 255, 0.7);
-    border: 0.731844px solid #BE5FAF;
-    border-radius: 5px;
+  display: inline-flex;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  color: #292B4A;
+  text-decoration: none;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: 1% 2%;
+  gap: 5px;
+  width: auto;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 45px;
 }
 .contactBox .item .linkBox:hover,
 .contactBox .item a:hover{

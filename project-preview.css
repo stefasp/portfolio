@@ -190,3 +190,14 @@
   line-height: 2.2rem;
     font-size: 1.2rem;
 }
+.impactSection{
+  padding: 10px 22px 22px;
+  display: block;
+  background: #cfc7fa33;
+  border-radius: 10px;
+}
+.impactSection img{
+  margin: 17px 0;
+  border-radius: 8px;
+  border: 1px solid #00000012;
+}
