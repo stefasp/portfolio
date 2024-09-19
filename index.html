@@ -52,8 +52,10 @@
         <div class="heroText">
           <div class="div-18">
             <div class="title">Strategic Product Growth,<br> powered by Lean UX</div>
-            <div class="description">
-              Hello! I’m Stefania Spangenberg, a Senior Product Designer specialized in user research and strategic problem-solving.<br> With a UCD + Lean UX approach, I craft solutions that align with user needs and drive impactful product development.
+            <div class="description">Hello! I’m Stefania Spangenberg, a Senior Product Designer specialized in user research and strategic problem-solving.<br> With a UCD + Lean UX approach, I craft solutions that align with user needs and drive impactful product development.</div>
+            <div class="actionsContainer">
+              <button id="copyButton" class="button primary">Get in Contact</button><input class="hide" type="text" id="textToCopy" value="stefus.sp@gmail.com">
+              <a class="button secondary" href="https://calendly.com/stefisp/meeting" target="_blank">Schedule 45 min Call</a>
             </div>
           </div>
         </div>
@@ -269,7 +271,7 @@
   </div>
 
   <div class="contactBox" id="getInContactBox">
-    <div class="columnLeft"><img src="img/reviewLinkedin.png" alt="get in contact"/></div>
+    <div class="columnLeft"><img src="img/review.png" alt="get in contact"/></div>
     <div class="columntRight">
       <h2 class="title space-mono-bold">Have a project?<br/>Let’s talk!</h2>
       <div class="itemsList">
@@ -296,6 +298,24 @@
 
 
 <script src="redirect.js"></script>
+
+<script>
+document.getElementById('copyButton').addEventListener('click', function() {
+    // Select the input field text
+    var copyText = document.getElementById('textToCopy');
+
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    document.execCommand("copy");
+
+    // Alert the copied text (optional)
+    alert("Copied the text: " + copyText.value);
+});
+</script>
+
 
 </body>
 </html>

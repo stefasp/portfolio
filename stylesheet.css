@@ -80,6 +80,28 @@ body{
   width: 75px;
   cursor: pointer;
 }
+.actionsContainer {
+    padding: 24px 0;
+    text-align: left;
+}
+.button {
+  margin-right: 10px;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+.button.primary{
+  background: linear-gradient(120deg, #3BC5EF, #713BEF);
+}
+.button.secondary{
+  background: linear-gradient(120deg, #FF6BFD, #FBC47B);
+}
 .footer{
   font-size: 14px;
   background: #fff;
