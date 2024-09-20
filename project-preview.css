@@ -191,10 +191,11 @@
     font-size: 1.2rem;
 }
 .impactSection{
-  padding: 10px 22px 22px;
-  display: block;
-  background: #cfc7fa33;
-  border-radius: 10px;
+    padding: 10px 22px 22px;
+    display: block;
+    background: #cfc7fa33;
+    border-radius: 10px;
+    border: dashed 4px #6A50F0;
 }
 .impactSection img{
   margin: 17px 0;
