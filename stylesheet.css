@@ -42,7 +42,7 @@ html, body {
 
 body{
   line-height: 1.5rem;
-  color: #292B4A;
+  color: #1A0633;
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -238,7 +238,7 @@ body{
   object-fit: auto;
   object-position: center;
   width: 13px;
-  fill: var(--NewBlack, #292b4a);
+  fill: var(--NewBlack, #1A0633);
   stroke-width: 1.524px;
   stroke: #fff;
   filter: drop-shadow(0px 3.049px 3.049px rgba(0, 0, 0, 0.25));
@@ -273,7 +273,7 @@ body{
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  color: var(--NewBlack, #292b4a);
+  color: var(--NewBlack, #1A0633);
   text-align: center;
   margin: auto 0;
 }
@@ -422,7 +422,7 @@ body{
   visibility: hidden;
   width: 157px;
   background-color: #d4f4ea;
-  color: #292B4A;
+  color: #1A0633;
   text-align: center;
   border-radius: 36px;
   padding: 5px;
@@ -454,7 +454,7 @@ body{
   display: inline-flex;
   opacity: 0.7;
   font-size: 0.9rem;
-  color: #292B4A;
+  color: #1A0633;
   text-decoration: none;
   box-sizing: border-box;
   flex-direction: row;

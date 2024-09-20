@@ -27,12 +27,23 @@
   margin-bottom: 10px;
 }
 .primary-project .projectTags > div{
-  margin-right: 6px;
-  font-size: 13px;
-  border-radius: 77px;
-  display: block;
-  padding: 0px 9px;
-  background: #313a6317;
+    line-height: 21px;
+    margin-right: 6px;
+    font-size: 12px;
+    border-radius: 77px;
+    display: block;
+    padding: 0px 8px;
+    font-weight: 500;
+    color: #fff;
+}
+.primary-project .projectTags > div.device{
+  background: #6A50F0;
+}
+.primary-project .projectTags > div.businessModel{
+  background: #EF6BA2;
+}
+.primary-project .projectTags > div.other{
+  background: #339EDF;
 }
 .primary-project.shiphero{
   background-color: #c3b9f93b;
@@ -51,7 +62,7 @@
   background-image: url(img/projects/Lev.png);
 }
 .primary-project.restorando{
-  background-color: #ff7ce629;
+  background-color: #ff7c7c29;
   background-image: url(img/projects/Restorando.png);
 }
 .primary-project.timeular{
@@ -115,7 +126,7 @@
 .primary-project .projectAction {
   text-decoration: none;
   font-weight: 500;
-  color: #3f3f3f;
+  color: #6f6e6edb;
   mix-blend-mode: color-burn;
   align-self: start;
   margin-top: 10px;
