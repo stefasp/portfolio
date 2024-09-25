@@ -74,11 +74,11 @@ body{
   position: fixed;
 }
 .header .img {
-  aspect-ratio: 1.15;
-  object-fit: auto;
-  object-position: center;
-  width: 75px;
-  cursor: pointer;
+    margin: 3px 0;
+    height: 65px;
+    object-position: center;
+    width: auto;
+    cursor: pointer;
 }
 .actionsContainer {
     padding: 24px 0;
