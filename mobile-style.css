@@ -3,7 +3,7 @@
     width: 135%;
   }
   .hero .title{
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
   .hero .description {
     font-size: 0.9rem;
@@ -37,6 +37,25 @@
   }
   .about-me {
     display: none;
+  }
+  .header{
+    display: block;
+  }
+  .header .menu-options {
+    flex: none;
+    display: none;
+    width: 100%;
+    opacity: 0;
+  }
+  .header .menu-options.opened{
+    opacity: 1;
+    display: block;
+  }
+  .header .menu-options a {
+    display: block;
+    width: 100%;
+    padding: 6% 2%;
+    border-top: 1px dashed #e2dff3;
   }
 }
 
