@@ -38,10 +38,22 @@
   .about-me {
     display: none;
   }
+  .modal-content .work-two-columns {
+    display: block !important;
+  }
+  .modal-content .work-two-columns .problem,
+  .modal-content .work-two-columns .solution{
+    margin: 23px 0;
+    width: 100% !important;
+  }
+  .modal-content .work-two-columns .problem img, .modal-content .work-two-columns .solution img {
+    left: -8px !important;
+    top: -17px !important;
+  }
   .header{
     display: block;
   }
-  .header .menu-options {
+  .header .menu-options{
     flex: none;
     display: none;
     width: 100%;
@@ -252,7 +264,7 @@
     width: 100%;
     height: auto;
     background-image: none !important;
-    padding-bottom: 100px;
+    padding-bottom: 6%;
   }
 }
 
