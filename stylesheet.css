@@ -98,10 +98,10 @@ body{
   text-align: center;
 }
 .button.primary{
-  background: linear-gradient(120deg, #3BC5EF, #713BEF);
+  background: linear-gradient(120deg, #4979c9, #8566ce);
 }
 .button.secondary{
-  background: linear-gradient(120deg, #FF6BFD, #FBC47B);
+  background: linear-gradient(120deg, #42ddd6, #65bde0);
 }
 .footer{
   font-size: 14px;
@@ -119,10 +119,10 @@ body{
   margin: auto 0;
 }
 .menu-options .selected{
-  color: #6A50F0;
+  color: #8e80d1;
 }
 .menu-options a:hover{
-  color: #6A50F0;
+  color: #8e80d1;
 }
 .menu-options a {
   padding: 1%;
@@ -290,11 +290,8 @@ body{
 }
 
 .about-me {
-  background-image: url(img/bgFeatures.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: auto;
   width: 100%;
+  background-color: #e4eaf1;
   padding: 20px 20px;
   display: table;
 }
@@ -386,7 +383,7 @@ body{
   margin: auto 0;
   width: 100%;
   text-align: center;
-  background: url(img/bgContact.png);
+  background-color: #e4eaf1;
   display: flex;
   flex-wrap: nowrap; /* Ensure items stay in a single row */
   gap: 4%;
