@@ -1,10 +1,10 @@
 .projectsList{
-  grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
-  padding: 0 20px;
-  display: grid;
-  width: auto;
-  gap: 13px;
-  transition: transform 0.2s ease-in-out;
+    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+    padding: 0 60px;
+    display: grid;
+    width: auto;
+    gap: 23px;
+    transition: transform 0.2s ease-in-out;
 }
 .primary-project:hover{
   box-shadow: 0 0 8px #c3c5e04f;
@@ -143,10 +143,10 @@
     padding: 10px 0;
 }
 .thumbnailList .list{
-  margin: 20px;
+  margin: 20px 60px;
   display: flex;
   flex-wrap: nowrap; /* Ensure items stay in a single row */
-  gap: 14px;
+  gap: 20px;
 }
 .thumbnailList .list img{
   width: 100%;
