@@ -1,11 +1,9 @@
 .space-mono-regular {
-  font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
 .space-mono-bold {
-  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-style: normal;
 }
@@ -51,6 +49,10 @@ body{
   padding-top:64px ;
   overflow-x: hidden;
   min-width: 363px;
+  background-color: #F0F3F6;
+}
+body a{
+  color: #7586F0;
 }
 .fixed-element {
     position: fixed;
@@ -69,8 +71,7 @@ body{
   gap: 0;
   top: 0;
   padding: 0 4%;
-  background: #fff;
-  box-shadow: 0px 0px 8px #62669045;
+  background: #F0F3F6;
   position: fixed;
 }
 .header .img {
@@ -90,18 +91,20 @@ body{
   border: none;
   font-size: 1rem;
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+  color: #030426;
+  font-weight: 600;
   border-radius: 50px;
   display: inline-block;
   padding: 10px 20px;
   text-align: center;
 }
 .button.primary{
-  background: linear-gradient(120deg, #4979c9, #8566ce);
+  background: #C2CAFA;
+  font-weight: 600;
 }
 .button.secondary{
-  background: linear-gradient(120deg, #42ddd6, #65bde0);
+  background: #A3F2CA;
+  font-weight: 600;
 }
 .footer{
   font-size: 14px;
@@ -119,10 +122,10 @@ body{
   margin: auto 0;
 }
 .menu-options .selected{
-  color: #8e80d1;
+  color: #7586F0;
 }
 .menu-options a:hover{
-  color: #8e80d1;
+  color: #7586F0;
 }
 .menu-options a {
   padding: 1%;
@@ -148,10 +151,6 @@ body{
   padding: 30px 60px;
   width: 100%;
   text-align: left;
-  background-image: url(img/bgHeroBlueCircle.png), url(img/bgHeroPurpleCircle.png);
-  background-position: bottom right, top right;
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto;
 }
 .hero .div-4 {
   gap: 20px;
@@ -291,7 +290,6 @@ body{
 
 .about-me {
   width: 100%;
-  background-color: #e4eaf1;
   padding: 20px 20px;
   display: table;
 }
@@ -380,10 +378,10 @@ body{
 }
 
 .contactBox{
-  margin: auto 0;
+  margin: 50px 0;
   width: 100%;
   text-align: center;
-  background-color: #e4eaf1;
+  background-color: #F0F3F6;
   display: flex;
   flex-wrap: nowrap; /* Ensure items stay in a single row */
   gap: 4%;
@@ -394,7 +392,7 @@ body{
 .contactBox .title{
   font-size: 2rem;
   line-height: 2.5rem;
-  margin: 31px 0;
+  margin: 31px 0 31px 1%;
 }
 .contactBox .columnLeft{
   flex: 1;
@@ -412,7 +410,7 @@ body{
 }
 .contactBox .reviewContainer img:hover{
   border-radius: 0 47px 47px 47px;
-  box-shadow: 0 0 25px #aae8d4
+  box-shadow: 0 0 25px #edeef6;
 }
 .contactBox .reviewContainer .tooltiptext {
   font-weight: 500;
@@ -444,7 +442,7 @@ body{
 }
 .contactBox .item {
     display: flex;
-    margin: 17px 0;
+    margin: 4px 0;
     gap: 8px;
 }
 .contactBox .item .linkBox,
@@ -457,16 +455,16 @@ body{
   box-sizing: border-box;
   flex-direction: row;
   align-items: center;
-  padding: 1% 2%;
+  padding: 1% 2% 1% 1%;
   gap: 5px;
   width: auto;
   height: 38px;
-  background: rgba(255, 255, 255, 0.7);
   border-radius: 45px;
 }
 .contactBox .item .linkBox:hover,
 .contactBox .item a:hover{
   opacity: 1;
+  background: rgba(255, 255, 255, 0.7);
 }
 .contactBox .item .linkBox img,
 .contactBox .item a img{

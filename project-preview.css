@@ -4,9 +4,11 @@
   display: grid;
   width: auto;
   gap: 13px;
+  transition: transform 0.2s ease-in-out;
 }
 .primary-project:hover{
-  box-shadow: 0 0 8px #383a624f;
+  box-shadow: 0 0 8px #c3c5e04f;
+  /*transform: scale(1.01);  Ajusta el valor para cambiar la intensidad del efecto */
 }
 
 .primary-project {
@@ -21,6 +23,7 @@
   background-size: auto 97%;
   background-repeat: no-repeat;
   cursor: pointer;
+  background-color: #fff;
 }
 .primary-project .projectTags{
   display: flex;
@@ -34,39 +37,33 @@
     display: block;
     padding: 0px 8px;
     font-weight: 500;
-    color: #fff;
+    color: rgba(3, 5, 36, 0.6);
 }
 .primary-project .projectTags > div.device{
-  background: #6A50F0;
+  background: #A3F2CA;
 }
 .primary-project .projectTags > div.businessModel{
-  background: #EF6BA2;
+  background: #C2CAFA;
 }
 .primary-project .projectTags > div.other{
-  background: #339EDF;
+  background: #FAF4C2;
 }
 .primary-project.shiphero{
-  background-color: #c3b9f93b;
   background-image: url(img/projects/ShipHero.png);
 }
 .primary-project.forta{
-  background-color: #44bbef29;
   background-image: url(img/projects/Forta.png);
 }
 .primary-project.fennel{
-  background-color: #44bbef29;
   background-image: url(img/projects/Fennel.png);
 }
 .primary-project.lev{
-  background-color: #c3b9f93b;
   background-image: url(img/projects/Lev.png);
 }
 .primary-project.restorando{
-  background-color: #ff7c7c29;
   background-image: url(img/projects/Restorando.png);
 }
 .primary-project.timeular{
-  background-color: #2ac6941c;
   background-image: url(img/projects/Timeular.png);
 }
 .primary-project .div-2,
@@ -114,10 +111,7 @@
 .primary-project .title {
   font-size: 22px;
 }
-.primary-project .title .highlight{
-    color: rgb(41 41 41);
-    mix-blend-mode: color-burn;
-}
+
 .primary-project .description {
     margin-top: 15px;
     line-height: 23px;
@@ -126,18 +120,12 @@
 .primary-project .projectAction {
   text-decoration: none;
   font-weight: 500;
-  color: #6f6e6edb;
-  mix-blend-mode: color-burn;
   align-self: start;
   margin-top: 10px;
   gap: 4px;
-  font-size: 16px;
-  background-size: 20px;
-  background-image: url(img/ArrowDoble.png);
+  font-size: 14px;
   line-height: 79%;
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding: 14px 24px 14px 0;
+  padding: 14px 14px 14px 4px;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -149,7 +137,11 @@
   flex-direction: column;
   padding: 17px 11px 0;
 }
-
+.white-section{
+    margin-top: 41px;
+    background-color: #fff;
+    padding: 10px 0;
+}
 .thumbnailList .list{
   margin: 20px;
   display: flex;
