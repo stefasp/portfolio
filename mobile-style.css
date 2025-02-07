@@ -223,7 +223,7 @@
     flex: 0 0 100%;
   }
   .thumbnailList .list .img{
-    flex: 0 0 49%; /* Each item takes 50% of the container width */
+    flex: 0 0 48%; /* Each item takes 50% of the container width */
   }
 }
 
