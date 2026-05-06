@@ -6,7 +6,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-R8P01XBKVN');
     </script>
 
@@ -23,7 +22,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
 </head>
 <body>
 <div class="projectPage">
@@ -31,89 +29,94 @@
     <img loading="lazy" srcset="img/logo.png" class="img" onclick="redirectToPage('index.html')"/>
     <div class="menu-options">
       <a href="index.html#seeWork" class="selected">Work</a>
-      <!--<a href="process.html" class="unselected">Process</a>-->
       <a href="https://www.linkedin.com/in/stefasp/" target="_blank" class="unselected">Experience</a>
-      <a href="#getInContactBox" class="unselected" >Get in contact</a>
+      <a href="#getInContactBox" class="unselected">Get in contact</a>
     </div>
   </div>
   <div class="full-container">
     <div class="modal-content">
       <div class="modal-text">
-            <img src="img/projects/shiphero/cover.png">
-            <div class="title">
-                <h1><span class="highlight">Shiphero:</span>Enhancing Efficiency in Warehouse Operations</h1>
-                <p>NYC 2020</p>
-            </div>
-            <h2>The Goal</h2>
-            <p>Our aim was to rebuild the picking flows and related workflows to make daily tasks more accessible and consistent. Previously, elements varied too much across different pages and flows, making the process messy and difficult to navigate. By streamlining these workflows, we aimed to improve the learning curve and efficiency, ensuring that users could quickly adapt to various flows.</p>
-            <p>Additionally, several critical needs had to be addressed:</p>
-            <ul>
-                <li>Scanner Flexibility: The scanner was always mandatory, which created issues. We needed to allow exceptions where necessary. While scanning should remain the primary path, administrators must be able to set special permissions.</li>
-                <li>Minimizing Workflow Blockages: Orders that couldn’t be completed should not halt the entire process. If an order needs to be set aside, it shouldn’t delay other orders.</li>
-                <li>Error Management: User processes should not be blocked by errors such as empty locations, or missing or broken items.</li>
-            </ul>
 
-            <h2>Team & Process</h2>
-            <ul>
-              <li>Lead Designer: Stefania</li>
-              <li>Manager: Project Manager</li>
-              <li>Collaborators: I worked closely with a Product Designer within our squad, maintaining alignment throughout the process on our projects. Additionally, the development team, also part of our squad, provided crucial technical feedback to ensure feasibility. We shared collaboration instances to address challenges and refine our approach.</li>
-            </ul>
-            <img src="img/projects/shiphero/timeline.png">
-            <h2>Page Structure Refactor:</h2>
-            <p>Through extensive research on existing picking flows, we identified three fundamental page structures:</p>
-            <ul>
-                <li>A page where the user selects the number of totes or orders to pick.</li>
-                <li>A page where users can preview orders.</li>
-                <li>A page where users can preview items.</li>
-            </ul>
-            <p>These pages were redesigned to allow for easy customization, making them adaptable for use in any picking flow or other application scenarios.</p>
-            <strong>Basic Page Structures for Flows</strong>
-            <img src="img/projects/shiphero/00.png">
-            <strong>Picking Flows: Pages and Instances</strong>
-            <img src="img/projects/shiphero/01.png">
-
-            <h2>Item's Cards States & Behavior:</h2>
-            <p>The item cards were tailored to accommodate various flows and provide the necessary information at each stage of the process. In the following image, you can see the different states of the card as the user progresses through the flow:</p>
-            <img src="img/projects/shiphero/02.png">
-            <img src="img/projects/shiphero/03.png">
-
-            <h2>Picking Page Topology:</h2>
-            <p>The picking page includes a card that guides users through their next steps, whether it's selecting a specific number of items or assigning a tote (containers used to organize orders).</p>
-            <p>At the top, users will find details about the item to be picked, including its location and the expected quantity.</p>
-            <p>Additionally, users will find other available actions, such as reporting errors if needed. Each action also offers a manual option for situations where a functional scanner is unavailable.</p>
-            <img src="img/projects/shiphero/04.png">
-
-            <h2>Picking Page Card States</h2>
-            <p>This is how the state of the card changes through the flow:</p>
-            <img src="img/projects/shiphero/05.png">
-
-            <h2>Picking Page Examples</h2>
-            <p>These are a few examples of possible states of the page and card</p>
-            <img src="img/projects/shiphero/06.png">
-            <img src="img/projects/shiphero/07.png">
-
-            <h2>Some other pages</h2>
-            <p>The initial image depicts the error reporting page, where users encounter a preview of the item along with a list of error types. After selecting the error type, users are prompted to complete a form with necessary information for submission to the manager. Additionally, the system implements adjustments to prevent future errors, such as temporarily reducing the item quantity to prevent wasted time for other workers.</p>
-            <p>The second image illustrates situations where totes need to be set aside due to errors, such as lack of stock of an item preventing order completion.</p>
-            <p>In the third image, a modal window is displayed for manual tote assignment, along with a page where users can view all pending orders for picking and have the option to delete individual ones.</p>
-            <img src="img/projects/shiphero/08.png">
-            <img src="img/projects/shiphero/09.png">
-            <img src="img/projects/shiphero/10.png">
-
-            <div class="impactSection">
-              <h2>Impact and Learnings</h2>
-              <p>In enhancing the Warehouse Management App, we focused on addressing previously overlooked worker experiences. Despite not using A/B testing, we identified key issues such as process errors and the need for privacy settings to support worker independence.</p><br>
-              <p>Implementing basic UX accessibility principles led to significant improvements. The app became more consistent and predictable, allowing users to recover from errors more effectively. Privacy features empowered workers to operate autonomously, building trust and reliability.</p><br>
-              <p>Qualitative feedback confirmed that these changes boosted efficiency and learnability. Users reported higher satisfaction with the app’s improved consistency and error handling, validating the effectiveness of our design improvements.</p>
-            </div>
+        <img src="img/projects/shiphero/cover.png">
+        <div class="title">
+          <h1><span class="highlight">ShipHero:</span> Enhancing Efficiency in Warehouse Operations</h1>
+          <p>NYC · 2020 · Lead Product Designer</p>
         </div>
-      
+
+        <h2>The Problem</h2>
+        <p>ShipHero is a warehouse management system used by fulfillment teams to pick, pack, and ship orders at scale. Pickers — the workers physically moving through the warehouse — rely on a mobile app to guide them through each step of the process.</p>
+        <p>The picking experience had grown inconsistent over time: different flows used different interaction patterns, pages varied in structure without a clear logic, and there was no unified system to handle the exceptions and errors that warehouse workers encounter daily. The result was a steep learning curve, recurring workflow blockages, and frustration when things went wrong.</p>
+        <p>Three problems needed to be solved together:</p>
+        <ul>
+          <li><strong>Scanner flexibility:</strong> Scanning was always mandatory, with no fallback. Administrators needed the ability to grant manual-entry permissions for situations where a scanner wasn't functional — without removing scanning as the default and most reliable path.</li>
+          <li><strong>Non-blocking error handling:</strong> A single problematic order could stall an entire picking session. Orders that couldn't be completed needed to be set aside without delaying everything else in the queue.</li>
+          <li><strong>Consistency across flows:</strong> Multiple picking flows (SIBP, MIBP, Bulk, Split) existed but had no shared structural logic, making it difficult for workers to switch between them or learn new ones quickly.</li>
+        </ul>
+
+        <h2>Team</h2>
+        <ul>
+          <li>Lead Designer: Stefania</li>
+          <li>Manager: Project Manager</li>
+          <li>Collaborators: One Product Designer (same squad) and the development team, involved throughout for technical feasibility feedback.</li>
+        </ul>
+        <img src="img/projects/shiphero/timeline.png">
+
+        <h2>Page Structure: Finding the Common Pattern</h2>
+        <p>Before designing anything new, I mapped all existing picking flows to understand what was actually happening across the product. Through that research, a clear pattern emerged: every picking flow — regardless of its specific logic — moved through the same three types of pages:</p>
+        <ul>
+          <li>A page where the worker selects the number of totes or orders to pick.</li>
+          <li>A page where workers preview and select orders.</li>
+          <li>A page where workers pick individual items.</li>
+        </ul>
+        <p>This was the structural insight that unlocked the rest of the work. Instead of designing each flow from scratch, I redesigned these three page types as flexible templates — adaptable to any picking flow without losing consistency. Workers moving between flows would now recognize the same patterns and know where to look.</p>
+
+        <strong>Basic Page Structures for Flows</strong>
+        <img src="img/projects/shiphero/00.png">
+        <strong>Picking Flows: Pages and Instances</strong>
+        <img src="img/projects/shiphero/01.png">
+
+        <h2>Item Card States and Behavior</h2>
+        <p>The item card is the core unit of the picking experience — it appears in every flow and needs to communicate different information depending on the context. Rather than designing separate cards per flow, I defined a single card system with states that adapt to the current situation: what's been picked, what's still required, where the item is located, which tote it belongs to, and whether an issue has been reported.</p>
+        <p>This approach reduced visual fragmentation and made the card's behavior predictable — workers could develop a mental model of how it worked and apply it across every flow they used.</p>
+        <img src="img/projects/shiphero/02.png">
+        <img src="img/projects/shiphero/03.png">
+
+        <h2>Picking Page Anatomy</h2>
+        <p>The picking page is where workers spend most of their time. It needed to communicate several things at once without creating visual noise: what item to pick, where to find it, how many are needed, which tote to assign it to, and what to do if something goes wrong.</p>
+        <p>I structured the page into clear zones: item details and location at the top (always visible), the action card in the center (current instruction or status), and error reporting at the bottom (always accessible but not visually dominant). Each zone has a defined role so workers know where to look for each type of information.</p>
+        <p>The manual entry option is surfaced only when the administrator has enabled it — keeping the scanner as the primary and fastest path while giving workers a fallback when needed.</p>
+        <img src="img/projects/shiphero/04.png">
+
+        <h2>Picking Page Card States</h2>
+        <p>The card at the center of the picking page changes state as the worker progresses through the flow — from scanning an item, to confirming a quantity, to assigning a tote, to completing the pick. Each state gives the worker exactly the instruction or feedback they need at that moment, without requiring them to navigate away from the page.</p>
+        <img src="img/projects/shiphero/05.png">
+
+        <h2>Picking Page Examples</h2>
+        <p>A few examples of how the page and card behave across different permission configurations and progress states.</p>
+        <img src="img/projects/shiphero/06.png">
+        <img src="img/projects/shiphero/07.png">
+
+        <h2>Error Handling and Edge Cases</h2>
+        <p>Error states were one of the most consequential design problems in this project — poorly handled errors could stop a worker's entire session and delay downstream fulfillment operations.</p>
+        <p><strong>Issue reporting</strong> was redesigned as a two-step flow: the worker first confirms they have the correct item (showing general item info before the specific issue is identified), then selects the error type and submits the relevant details to the manager. For certain error types, such as damaged or missing items, the system can automatically put related orders on hold — preventing other workers from wasting time on orders that can't be completed.</p>
+        <p><strong>Tote assignment</strong> needed a manual fallback for situations where scanning wasn't possible. The tote selection modal keeps the search field sticky when scrolling, making it fast to find the right tote even with a long list. Available and unavailable totes are clearly separated.</p>
+        <p><strong>Orders with errors</strong> at the end of a picking session are surfaced in a dedicated summary screen, listing each affected tote and the specific error per order. Workers receive clear instructions to move those totes to the QA zone — keeping the packing line moving without losing track of the exceptions.</p>
+        <img src="img/projects/shiphero/08.png">
+        <img src="img/projects/shiphero/09.png">
+        <img src="img/projects/shiphero/10.png">
+
+        <div class="impactSection">
+          <h2>Impact and Learnings</h2>
+          <p>The primary signal of success was qualitative: after the redesign, user feedback shifted from reports about confusion and workflow blockages toward more specific edge cases — indicating the core structural problems had been resolved. Workers could move between picking flows without relearning the interface, and error situations no longer required supervisor intervention to unblock.</p>
+          <p>The most important design decision was working backwards from the flows rather than forward from individual screens. Finding the three shared page structures first gave every subsequent decision a clear framework — it also made the engineering handoff cleaner, since the component system reflected the actual logic of the product rather than being screen-by-screen.</p>
+          <p>This project reinforced something I apply consistently: in high-frequency operational tools, consistency and predictability are more valuable than novelty. Workers using this app dozens of times per shift benefit far more from a system they can rely on than from features that require attention to understand.</p>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
 <div class="footer">Developed & Designed by Stef with ♥</div>
-
 
 <script src="redirect.js"></script>
 </body>

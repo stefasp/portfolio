@@ -41,94 +41,79 @@
       <div class="modal-text">
               <img src="img/projects/lev/cover.png">
               <div class="title">
-                  <h1><span class="highlight">Lev:</span>Commercial real estate transactions, rebuilt.</h1>
-                  <p>NYC 2022</p>
+                  <h1><span class="highlight">Lev:</span> Commercial real estate transactions, rebuilt.</h1>
+                  <p>NYC · 2022 · Lead Product Designer</p>
               </div>
-              <h2>The Goal</h2>
-              <p>In my project with Lev Marketplace, the primary aim was to connect commercial real estate investors with the perfect lenders for their needs. The ultimate goal? Ensuring that clients not only secure more deals but also close them faster and with better terms compared to their competitors.</p>
-              <p>How did we achieve this? By empowering clients to analyze lenders based on various deal features, seamlessly request quotes, and confidently identify the strengths and weaknesses of each offer. With Lev Marketplace, closing a competitive deal is no longer a shot in the dark—it's a sure thing! 🏢💼</p>
-              <p>Now, let's dive into the nitty-gritty details of our project!</p>
 
-            <h2>Team</h2>
-            <ul>
-              <li>Lead Designer: Stefania</li>
-              <li>Manager: Project Manager</li>
-              <li>Collaborators: The development team.</li>
-            </ul>
-            <img src="img/projects/lev/timeline.png"/>
+              <h2>The Problem</h2>
+              <p>Commercial real estate brokers were managing complex, multi-party deals — coordinating between borrowers, lenders, and internal teams — inside a platform that had no shared visibility, no structured workflow, and no consistent way to track what was happening or why. Deals stalled. Documents got lost. Borrowers had no idea where they stood in the process.</p>
+              <p>My role was to redesign the core deal management experience: document handling, task coordination, lender analysis, and real-time deal updates — across both desktop and mobile.</p>
 
-              <h2>📙 Documentation Management</h2>
-              <p>In this project, the primary focus was to ensure seamless and transparent communication between brokers and borrowers within the platform. They collaborate on a range of tasks, including document requests and information sharing from the borrower.</p>
-              <p>Special care was taken to customize document visibility, recognizing the sensitivity of financial information. With this in mind, brokers, borrowers, and lenders each have their dedicated document tab on the task dashboard. This setup allows for easy access to all shared documents, complete with a specialized search engine to quickly find what they need—all while keeping within the context of the task at hand. 📄🔍</p>
-              <p>Some changes Made in User Workflow: </p>
+              <h2>Team</h2>
               <ul>
-                <li>Component-Based Design and Code:The previous design lacked components, leading to inconsistency. The new design introduces and utilizes components to maintain consistency across the platform.</li>
-                <li>Added new information to document items, including date of document creation or modification, visibility settings to indicate who can see the document, and task information to show if the document is associated with any task.</li>
-                <li>Enabled users to organize documents into folders, improving document management and accessibility.</li>
-                <li>Implemented a deleted section to store ghost versions of deleted documents, allowing users to restore them if needed.</li>
-                <li>Redesigned each tab to include bulk edit capabilities, allowing users to apply actions to multiple items simultaneously.</li>
-                <li>Worked on responsive components to ensure the product is usable on small screens, enhancing mobile support.</li>
-                <li>Grouped related information to avoid clutter, such as combining "uploaded by" with the name and user role, and merging document name and document type into the same column for a cleaner layout.</li>
-                <li>Document Preview: Created a document preview modal from scratch, including a search feature frequently needed by brokers to find specific parts of documents.</li>
+                <li>Lead Designer: Stefania</li>
+                <li>Manager: Project Manager</li>
+                <li>Collaborators: Development team</li>
               </ul>
-              <p>These changes significantly improved the user workflow, ensuring a more intuitive, efficient, and consistent user experience across the platform.</p>
+              <img src="img/projects/lev/timeline.png"/>
+
+              <h2>Document Management</h2>
+              <p>Document handling was creating friction at every level. There were no components, no folder structure, and no visibility controls — and in commercial real estate, who can see which document is a compliance and trust issue, not just a UX preference.</p>
+              <p>I redesigned the document system with role-based visibility so that brokers, borrowers, and lenders each see only what's relevant to them. Beyond access control, the redesign addressed several concrete pain points surfaced through user feedback:</p>
+              <ul>
+                <li><strong>Traceability:</strong> Added document metadata — creation and modification dates, visibility settings, and task associations — so users could understand the context of each file at a glance.</li>
+                <li><strong>Organization:</strong> Introduced folder structures and bulk editing to handle the volume of documents a typical deal generates.</li>
+                <li><strong>Recovery:</strong> Implemented a deleted documents section with restore capability, addressing a recurring user concern about accidental deletions.</li>
+                <li><strong>Information density:</strong> Regrouped related fields (uploader name + role, document name + type) to reduce visual clutter without losing detail.</li>
+                <li><strong>Document preview:</strong> Built a preview modal from scratch with in-document search — a feature brokers specifically needed to review term sheets quickly without downloading files.</li>
+                <li><strong>Mobile support:</strong> Designed responsive components to ensure usability on small screens, extending access beyond desktop workflows.</li>
+              </ul>
               <img src="img/projects/lev/01.png">
               <img src="img/projects/lev/02.png">
 
-              <h2>Deal tasks dashboard</h2>
-              <p>Let's zoom in on another key aspect of our project:</p>
-              <p>Both brokers and borrowers will have clear visibility into their own pending tasks, as well as those of others. We've made sure to highlight any blocking tasks that may require immediate attention, ensuring smooth progress.</p>
-              <p>Tasks are neatly organized by stage, providing users with a clear overview of their position in the process and what steps come next. This streamlined approach makes it effortless to track progress and stay on top of things every step of the way. 🚀📝</p>
-              <p>Some changes Made in User Workflow: </p>
+              <h2>Deal Tasks Dashboard</h2>
+              <p>Brokers and borrowers were operating without a shared map of the process. Borrowers didn't know what stage they were in, what was blocking progress, or what came next. Brokers had no clean way to surface urgent tasks without overwhelming borrowers with future steps that weren't yet relevant.</p>
+              <p>I reorganized the task dashboard around deal stages, creating a clear separation between what requires action now and what comes later. Key changes driven by this framing:</p>
               <ul>
-                <li>UI Redesign and Component Consistency: Redesigned the user interface and implemented components to maintain consistency throughout the platform.</li>
-                <li>Task Grouping by Process Steps: Organized tasks by the step of the process. This helps borrowers understand their current position and the upcoming steps, while brokers can add future tasks without confusing borrowers and keep their attention on current tasks.</li>
-                <li>List of People Involved in Each Task: Included a detailed list of people involved in each task, clarifying which tasks are meant for individual borrowers or for both.</li>
-                <li>Enhanced Task Organization: Improved task organization with graphic elements such as icons and customized task descriptions to better represent the content.</li>
-                <li>Optional Task Descriptions: Added the option to provide additional descriptions for tasks, offering more detail to borrowers when necessary.</li>
-                <li>Mobile Version and New Features: Developed a mobile version of the page to ensure usability on small screens and incorporated the new features seamlessly into the mobile interface.</li>
+                <li><strong>Stage-based grouping:</strong> Tasks are organized by process step, giving borrowers a clear sense of position and progress — and allowing brokers to plan ahead without creating noise for borrowers.</li>
+                <li><strong>Blocking task visibility:</strong> Tasks that are blocking deal progress are surfaced prominently, so both parties know where attention is needed.</li>
+                <li><strong>Participant clarity:</strong> Each task shows who is responsible and whether it involves the borrower, the broker, or both — eliminating ambiguity about who needs to act.</li>
+                <li><strong>Optional descriptions:</strong> Brokers can add context to tasks when instructions need more detail, without cluttering the default view.</li>
+                <li><strong>Mobile version:</strong> Rebuilt the dashboard for small screens, carrying all new features into the mobile experience.</li>
               </ul>
-              <p>These changes significantly enhanced task management and visibility for both brokers and borrowers, ensuring a more intuitive and organized user experience across the platform.</p>
               <img src="img/projects/lev/03.png">
 
-              <h2>📝 Deal Feed</h2>
-              <p>In order to keep borrowers informed and on track with their deal, we introduced a dynamic feed where they can stay updated with the latest developments on their deals. This feed provides real-time insights into the status of their transactions, ensuring borrowers are always in the loop and on schedule. 📰🔄</p>
+              <h2>Deal Feed</h2>
+              <p>Borrowers had no real-time visibility into what was happening with their deal between touchpoints with their broker. Lender activity, new terms, and task updates were happening without any notification reaching the borrower.</p>
+              <p>I designed a deal feed from scratch. Before defining the UI, I mapped every notification type the system could generate:</p>
+              <ul>
+                <li>Lender activity: when a lender is added, contacted, passes, or reviews a deal.</li>
+                <li>Terms updates: new terms received, including cases where a single lender sends multiple rounds of terms.</li>
+                <li>Task status changes: new tasks, updates, and assignments.</li>
+                <li>Task notes: comments made to unblock tasks — often the most actionable notification type.</li>
+              </ul>
+              <p>Several edge cases shaped the card structure: lenders can send multiple terms per deal; status updates can include an attached note; if a lender passes, a reason is attached; and users managing multiple deals need to track feeds across all of them simultaneously.</p>
+              <p>The resulting feed card system uses distinct colors and icons per notification type, making it scannable at a glance — users can immediately identify whether they're looking at a new term, a lender update, or a task action, without reading the full card.</p>
               <img src="img/projects/lev/04.png">
-              <p>To structure feed notifications, I researched and listed all types of notifications we could send to borrowers. These include:</p>
-              <ul>
-                <li>Notifications about lenders involved in their deal: for example, when a lender is added, contacted by brokers, or when they pass or review the deal.</li>
-                <li>Notifications about terms: informing borrowers of new terms received (since one lender can send multiple terms).</li>
-                <li>Notifications about task statuses: including notifications for new tasks, updates to tasks, and task assignments.</li>
-                <li>Notifications about task notes: particularly important as comments are made to unblock tasks.</li>
-              </ul>
-              <p>Also, some things that I needed to consider to design notifications:</p>
-              <ul>
-                <li>Notifications may include actions, and in this case, we aim to ensure these actions are very clear for the user.</li>
-                <li>Lenders can send more than one term for a deal</li>
-                <li>Updates in lenders and terms can be done with a note</li>
-                <li>If a lender passed there is a reason attached</li>
-                <li>User may have multiple deals and, in that case, they would be following multiple deals notifications.</li>
-              </ul>
-              <p>I meticulously crafted the structure of our feed cards to be both versatile and intuitive, accommodating various types of content seamlessly. Each card is designed with distinct colors and icons, ensuring easy recognition—users can quickly spot new terms or updates at a glance.</p>
               <img src="img/projects/lev/05.png">
               <img src="img/projects/lev/feedCardStates.png">
-              
 
-              <h2>📊🔍 Lender's analysis Tool</h2>
-              <p>Identifying the perfect lender for borrowers hinges on thorough lender analysis. The goal was to develop an analysis tool that provides invaluable insights into how lenders operate their business and the types of deals they prefer.</p>
-              <p>By understanding these preferences, brokers can effectively match lenders with the most suitable deals, ensuring successful partnerships for all parties involved.</p>
+              <h2>Lender Analysis Tool</h2>
+              <p>Matching the right lender to the right deal was largely guesswork before this tool existed. Brokers needed to understand lender preferences — deal types, size ranges, risk tolerance — to make confident recommendations to borrowers.</p>
+              <p>I designed an analysis tool that surfaces lender behavior patterns and deal preferences, giving brokers a structured way to compare options and explain their recommendations to clients with confidence.</p>
               <img src="img/projects/lev/06.png">
+
               <div class="impactSection">
                 <h2>Impact and Learnings</h2>
-                <p>Throughout this project with Lev Marketplace, a critical takeaway was the importance of aligning product design with user needs rather than merely focusing on system functionality. By enhancing transparency and improving workflows for brokers and borrowers, we discovered that streamlined processes significantly reduce friction and increase user satisfaction. Although we did not have A/B testing or tracking metrics in place, we observed a noticeable shift in user feedback: the most common issues reported by users evolved positively once we implemented these improvements. This change in user concerns can be interpreted as an indicator of success, demonstrating the effectiveness of our design enhancements.</p><br>
-                <p>A major lesson was the value of creating a clear, well-structured user journey that minimizes complexity while maximizing efficiency. For instance, the introduction of a task dashboard that groups actions by process stages helped users easily track their progress and prioritize tasks. This insight reinforced the importance of simplifying workflows to enhance engagement.</p><br>
-                <p>The custom document management system, including task-linked documents and intuitive folder structures, addressed the specific pain points of brokers and borrowers. This not only improved document handling but also ensured compliance and maintained privacy.</p><br>
-                <p>Lastly, through user feedback and iterative testing, we learned that delivering real-time, actionable insights —like those provided by the deal feed and lender analysis tool— empowers users to make better decisions. Our shift to providing dynamic, relevant updates proved essential in ensuring users stayed engaged and confident in the platform.</p><br>
-                <p>These learnings have contributed to a more user-centered approach that not only boosts productivity but also builds trust in the Lev Marketplace platform.</p>
+                <p>Without instrumented metrics at the time, I tracked which issues users raised most frequently before and after each release. The nature of reported problems shifted — from "I can't find this document" and "I don't know what's happening with my deal" toward more specific edge cases. That shift indicated the core workflow problems were resolved, even without quantitative data to confirm it.</p>
+                <p>The compliance dimension of document visibility was the most important constraint I hadn't fully anticipated. In financial services, access control isn't a feature — it's a requirement. Getting the visibility rules right meant working closely with the engineering team to understand what was technically enforceable, not just what looked clean in Figma. That collaboration shaped how I approach technical constraints on every project since.</p>
+                <p>Building the design system in parallel with the product work was the right call. The platform had no component library when I joined, and the inconsistency was creating friction both for users and for the development team. Establishing components early made it possible to move faster on feature work without accumulating design debt — and gave engineers clear behavioral specs for every element.</p>
+                <p>The absence of tracking early in this project reinforced something I now prioritize from day one: establishing lightweight measurement before launch, so iteration is driven by real usage data rather than inference.</p>
               </div>
-               <h2>Figma Design System: components library</h2>
-              <p>When I joined Lev, the team was operating without a design system, which meant there was an immediate need for a structured, cohesive approach to design elements. I took on the challenge of building the design system from scratch, carefully planning each component to ensure it would be flexible and adaptable to evolving app requirements. This approach allowed us to build a robust foundation that could accommodate both current and future needs.</p>
-              <p>To support the team and ensure consistent implementation, I also developed comprehensive documentation. This included detailed descriptions of each element's status, behavior, and interaction guidelines, giving team members clear insights into how each component should function across different scenarios. Here are a few examples that illustrate the foundational elements and structure of Lev’s design system.</p>
+
+              <h2>Figma Design System: Component Library</h2>
+              <p>When I joined Lev, the team had no design system — every surface was inconsistent, and there was no shared language between design and engineering. I built the component library from scratch, planning each component for flexibility and adaptability as the product evolved.</p>
+              <p>Alongside the components, I wrote comprehensive documentation covering each element's states, behaviors, and interaction guidelines. This gave the development team clear specs for implementation and reduced the back-and-forth that typically slows down handoff.</p>
               <img src="img/projects/lev/DS-01.png">
               <img src="img/projects/lev/DS-02.png">
               <img src="img/projects/lev/DS-03.png">

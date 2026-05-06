@@ -6,7 +6,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-R8P01XBKVN');
     </script>
 
@@ -23,120 +22,108 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
 </head>
 <body>
   <div class="projectPage">
     <div class="header">
-    <img loading="lazy" srcset="img/logo.png" class="img" onclick="redirectToPage('index.html')"/>
-    <div class="menu-options">
-      <a href="index.html#seeWork" class="selected">Work</a>
-      <!--<a href="process.html" class="unselected">Process</a>-->
-      <a href="https://www.linkedin.com/in/stefasp/" target="_blank" class="unselected">Experience</a>
-      <a href="#getInContactBox" class="unselected" >Get in contact</a>
+      <img loading="lazy" srcset="img/logo.png" class="img" onclick="redirectToPage('index.html')"/>
+      <div class="menu-options">
+        <a href="index.html#seeWork" class="selected">Work</a>
+        <a href="https://www.linkedin.com/in/stefasp/" target="_blank" class="unselected">Experience</a>
+        <a href="#getInContactBox" class="unselected">Get in contact</a>
+      </div>
     </div>
-  </div>
     <div class="full-container">
       <div class="modal-content">
-          <div class="modal-text">
-              <img src="img/projects/restorando/cover.png">
-              <div class="title">
-                  <h1><span class="highlight">Restorando:</span> Find the right restaurant</h1>
-                  <p>Argentina, 2018</p>
-              </div>
-              <h2>The Goal</h2>
-              <p>The challenge we faced was reducing the bounce rate on restaurant profile screens, where the majority of our traffic landed.</p>
+        <div class="modal-text">
 
-              <p>Of the four platforms available to us, we chose to focus on mobile web. As the following chart shows, mobile web has experienced the highest growth over the past four years. Additionally, it offers greater agility than native apps, allowing us to validate, experiment, and test more quickly.</p>
-              <img src="img/projects/restorando/01.png">
-              <p>Data indicated that most users spent less than 3 seconds on a restaurant's profile screen, a clear sign that we were failing to meet their needs. But why?</p>
-              <img src="img/projects/restorando/02.png">
-              <p>Up to this point, the site had a primarily transactional approach, pushing users to make a booking. Upon landing on a restaurant profile, users were greeted with a “Book for free” message and a prominent “See availability” button. However, we decided to reframe the problem by asking: <strong>What is the actual need users are trying to fulfill when they arrive at Restorando? What is their "Job to Be Done"—the problem or task they need to accomplish?</strong></p>
-
-              <h2>Team & Process</h2>
-              <ul>
-                <li>Lead Designer: Stefania</li>
-                <li>Manager: CTO</li>
-                <li>Collaborators: I worked closely with a Product Designer within our squad, maintaining alignment throughout the process on our projects. Additionally, the development team, also part of our squad, provided crucial technical feedback to ensure feasibility. We shared collaboration instances to address challenges and refine our approach.</li>
-              </ul>
-              <img src="img/projects/restorando/timeline.png">
-
-              <h2>Research: Initial survey</h2>
-              <p>We surveyed the users that arrived to the restaurant profile page. The question we asked was: what do you want to do? And we offered them the tasks that we thought were the most relevant, allowing them to add additional options if necessary:</p>
-              <ul>
-                <li>Find where to eat.</li>
-                <li>Book a table</li>
-                <li>Find specific information about a restaurant</li>
-                <li>Other</li>
-              </ul>
-              <p>To those who answered “Book a table” we also asked if they already knew where they wanted to eat, and to those who were looking for information about a restaurant we asked them how flexible they were to change places if the restaurant couldn’t accommodate them. The results were the following:</li></p>
-              
-              <img src="img/projects/restorando/03.png">
-              <p>As you can see, almost 60% of our users want to go out for dinner and have not yet decided where (Find + Book but don’t know where) and 20% of those who do know (5% of total traffic) are willing to change the restaurant they had chosen initially if there is no availability.</p>
-              <p>Summarizing: almost two-thirds of our users visit to our web app without knowing where to eat and evaluating the restaurant they searched. Our job is, then, to help them make that decision on the restaurant’s profile screen.</p>
-
-              <h2>Storyboard</h2>
-              <p>In order to devise solutions, we created a storyboard that helped us understand the micro-moments of the user that needs to know if a restaurant is good for them.</p>
-              <img src="img/projects/restorando/04.png">
-              
-              <h2>Surveys</h2>
-              <img src="img/projects/restorando/05.png">
-              <p>So, How do users know if a place is good for them? We published new surveys to understand what information was relevant to our users and whether they could find it on the site or not. These were some of the learnings:</p>
-              <ul>
-                <li>The zone is the most searched information on mobile web and the vast majority finds it.</li>
-                <li>Prices is the second most relevant and almost half of the users don’t find them.</li>
-                <li>Menu and photos are similarly searched and mostly found.</li>
-                <li>They are also looking for a telephone number to contact the restaurant, but we didn’t give that option.</li>
-                <li>Finally, the reviews of the place.</li>
-                <li>The variable that users are less willing to change is the day.</li>
-              </ul>
-
-              <div class="two-columns">
-                <div class="img-half"><img src="img/projects/restorando/06.png"/></div>
-                <div class="text-half">
-                  <h2>Heatmaps</h2>
-                  <p>In addition, we created heatmaps that enabled us to understand the current use of the restaurant’s profile. Some of the most relevant observations were:</p>
-                  <ul>
-                    <li>The photo section is the most clicked. Even if in the surveys users didn’t say they were looking for photos, by looking at the events and heatmaps we can see that it is one of the most performed actions. That is why it is important to combine different sources of information, qualitative and quantitative. (What users say is not the same to what they do!)</li>
-                    <li>sers interact with the detail items (price, schedule, payment methods and food). We could assume that they want to see more information about each of these items.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="two-columns">
-                <div class="img-half"><img src="img/projects/restorando/07.png"/></div>
-                <div class="text-half">
-                  <h2>Formulate hypothesis</h2>
-                  <p>With all the collected information we made a first low quality prototype, reformulating the hierarchy and architecture of the information. Also, we write down doubts about the solution to answer them in the test with users.</p>
-                </div>
-              </div>
-              <h2>Validate with users</h2>
-              <p>To validate the hypothesis we created different versions of the same strategy so that we could find weaknesses and strengths in each design. By defining different real life scenarios we were able those how the designs work for each use case.</p>
-              <img src="img/projects/restorando/08.png"/>
-              <p>SPrevious to the usability tests with prototypes, we usually do an interview where we inquire about the problem we are working on. In this way we can understand the user’s needs, frustrations and get information to analyze their behavior in the user test.</p>
-              <p>We also use this information to adapt the task and scenarios to the users, so that they feel more represented and their actions become more natural. Some learnings:</p>
-              <ul>
-                <li>The new information’s hierarchy was a success, users could quickly find the basic information. They felt more comfortable with more spaced interfaces.</li>
-                <li>When you have to wait for your table to be ready, the whole moment of chilling and romance is ruined; and children get anxious. However, if you are going out with a group of friends, waiting becomes less annoying. This is certainly good for us because the reservation is useful and it helps people having better moments when they dine out.</li>
-                <li>The location of the table is important, if it’s bad people feel uncomfortable and can’t relax. Some of the bad locations that users tell us about are: a noisy place, near the door, down the air conditioner, next to the bathroom. This is a possible problem we could work in the future.</li>
-                <li>Noise is one of the biggest complaints, it means having to shout, having difficulties listening, it creates a climate of annoyance. It is a factor that may imply discarding the place.</li>
-                <li>» The type of food is good but they want to see it in detail, even a list of words related to food was not enough; but the full menu was very useful.</li>
-                <li>The opening hours were seen in detail by the users. They want to know if they can eat with time or if the kitchen is about to close.</li>
-                <li>The price is really relevant when it comes to choosing where to dine. Knowing the average price was very useful for deciding, however there were doubts about the price already including the discount or not. For some users the benefits are very important, but in general it is not exclusive to choose.</li>
-                <li>The pictures provide a lot of information, like the type of food, the space, and what facilities does the restaurant offers. Having few pictures or providing one’s that don’t give information does not allow users to make a decision.</li>
-                <li>The stars do not provide enough information to compare, the numeric rating allows to see more differences. The number of reviews that affect the score is an important factor when prioritizing options, especially in cases where there are very few qualifications.</li>
-                <li>Users read at least 5 of the latest ratings. If they see several complaints they discard the place. If they see a low rating, they read the comments to see if it’s just one or there’s more. They evaluate if the complaints have or not sense for them. If the restaurant fails in aspects that are relevant to the user, and if there are several complaints about the place, they discard it as an option.</li>
-                <li>Comments with poor content do not help in making a decision and is frustrating. To know whether a place is good or not, they have to see if the amount of positive reviews is higher than negative ones.</li>
-              </ul>
-              <h2>Iterate and Define</h2>
-              <p>After all the learning we made in the tests with users and interviews, we iterated the designs in order to avoid and solve their frustrations. Having the final idea we made a limited version that was easy to implement. We apply the improvements in the restaurant’s profile and in the results page, in order to maintain consistency in the site. This way we could finish validating with the use, if these changes were a solution to the problems of our users.</p>
-              <img src="img/projects/restorando/09.png"/>
-              <div class="impactSection">
-                <h2>Impact & Learnings</h2>
-                <p>We validated our solution through an A/B test, comparing session time and conversion rates between the new and old versions. The first positive outcome was a noticeable <b>increase in session time</b> and a <b>significant reduction in bounce rate</b>.</p>
-                <img src="img/projects/restorando/10.png"/>
-                <p>However, the most valuable takeaway was understanding that <strong>aligning the experience with users' actual needs —rather than just driving conversion— led to more meaningful engagement</strong>. By shifting the focus from pushing bookings to addressing what users were really looking for, we saw a <strong>24% increase</strong> in conversions with the new version. This approach not only improved metrics but created a more satisfying experience for users—a true win-win! ✊</p>
-              </div>
+          <img src="img/projects/restorando/cover.png">
+          <div class="title">
+            <h1><span class="highlight">Restorando:</span> Find the Right Restaurant</h1>
+            <p>Argentina · 2018 · Lead Product Designer</p>
           </div>
+
+          <h2>The Problem</h2>
+          <p>The challenge was to reduce the bounce rate on restaurant profile screens — where the majority of our traffic landed. Most users were spending less than 3 seconds on the page before leaving, a clear signal that the experience wasn't meeting their needs. But before redesigning anything, we needed to understand why.</p>
+          <p>Of the four platforms available, we chose to focus on mobile web. It had the highest growth over the past four years and offered more agility than native apps for running experiments and validating changes quickly.</p>
+          <img src="img/projects/restorando/01.png">
+          <p>The site had a transactional framing: the first thing users saw on a restaurant profile was "Book for free" and a prominent "See availability" button. We were optimizing for conversion before we'd earned the right to ask for it. We decided to reframe the problem entirely: <strong>what is the actual job users are trying to do when they arrive at Restorando?</strong></p>
+          <img src="img/projects/restorando/02.png">
+
+          <h2>Team</h2>
+          <ul>
+            <li>Lead Designer: Stefania</li>
+            <li>Manager: CTO</li>
+            <li>Collaborators: One Product Designer (same squad) and the development team for technical feasibility.</li>
+          </ul>
+          <img src="img/projects/restorando/timeline.png">
+
+          <h2>Research: Initial Survey</h2>
+          <p>We surveyed users arriving at restaurant profile pages with a single question: what do you want to do? Options included finding somewhere to eat, booking a table, looking up specific information about a restaurant, or other. For users who said "Book a table," we asked whether they already knew where they wanted to go. For those looking up information, we asked how flexible they were about switching restaurants if their first choice wasn't available.</p>
+          <img src="img/projects/restorando/03.png">
+          <p>The results were the core insight that reframed the entire project: almost 60% of users arriving at a restaurant profile hadn't decided where to eat yet. They were evaluating, not booking. A further 20% of those who did know where they wanted to go were open to switching if there was no availability — meaning only a small fraction of our traffic was ready to book on arrival.</p>
+          <p>In short: nearly two-thirds of users were using Restorando to make a decision, not execute one. Our job on the profile screen wasn't to push a booking — it was to help them decide.</p>
+
+          <h2>Storyboard</h2>
+          <p>To map the decision-making journey, we created a storyboard tracing the micro-moments a user goes through when evaluating whether a restaurant is right for them — from the initial search context through to committing to a reservation. This helped us identify which information mattered at each stage and where the current profile was failing to provide it.</p>
+          <img src="img/projects/restorando/04.png">
+
+          <h2>Surveys: What Information Do Users Need?</h2>
+          <img src="img/projects/restorando/05.png">
+          <p>We ran a second round of surveys to understand what information users were actually looking for and whether they could find it on the current profile. Key findings:</p>
+          <ul>
+            <li>Location was the most searched piece of information — and most users could find it.</li>
+            <li>Price was the second most important — and nearly half of users couldn't find it.</li>
+            <li>Menu and photos were similarly sought and mostly findable.</li>
+            <li>Users wanted a phone number to contact the restaurant directly — we didn't offer that.</li>
+            <li>Reviews mattered, but their format on the current profile wasn't serving users well.</li>
+            <li>The day of the week was the variable users were least willing to change — meaning availability for their specific day was a decisive factor.</li>
+          </ul>
+
+          <div class="two-columns">
+            <div class="img-half"><img src="img/projects/restorando/06.png"/></div>
+            <div class="text-half">
+              <h2>Heatmaps</h2>
+              <p>Heatmaps revealed an important gap between what users said they wanted and what they actually did. Photos were the most-clicked element on the page — but in the surveys, users hadn't ranked photos as a top priority. This is a reliable pattern: self-reported behavior and observed behavior diverge regularly, which is exactly why combining qualitative and quantitative methods matters. Users interact with detail items — price, hours, payment methods, food type — suggesting they wanted more depth than the current layout provided.</p>
+            </div>
+          </div>
+
+          <div class="two-columns">
+            <div class="img-half"><img src="img/projects/restorando/07.png"/></div>
+            <div class="text-half">
+              <h2>Formulate Hypothesis</h2>
+              <p>With the research consolidated, we built a first low-fidelity prototype that restructured the information hierarchy and architecture of the profile page. We also documented open questions about the design — things we were uncertain about — to test explicitly with users rather than assuming the answers.</p>
+            </div>
+          </div>
+
+          <h2>Validate with Users</h2>
+          <p>We created multiple versions of the redesigned strategy to find weaknesses and strengths in each approach. By assigning realistic scenarios to users during testing, we could observe how the designs performed across different use cases — not just the ideal path.</p>
+          <img src="img/projects/restorando/08.png"/>
+          <p>Prior to the prototype testing, each session began with an interview about the problem domain — how users currently choose restaurants, what frustrates them, what information they rely on. This gave us context to interpret behavior during the test and allowed us to adapt tasks to each user's real-life situation, making their actions more natural and their responses more reliable.</p>
+          <p>Selected findings from the sessions:</p>
+          <ul>
+            <li>The new information hierarchy worked — users found basic information quickly and found the more spaced layout easier to read.</li>
+            <li>Food type needed to be specific. A word list wasn't enough; users wanted the full menu to make a decision.</li>
+            <li>Opening hours were examined carefully. Users wanted to know whether they could eat comfortably or whether the kitchen was about to close.</li>
+            <li>Price clarity mattered, but context did too — users were uncertain whether displayed prices included discounts.</li>
+            <li>Photos were highly informative: users read them for food type, space, and ambiance. Low-quality or uninformative photos actively blocked decision-making.</li>
+            <li>Star ratings weren't granular enough for comparison. Numeric scores and review volume gave users a more reliable signal — especially when scores were based on very few reviews.</li>
+            <li>Users read at least 5 recent reviews. They looked for patterns: multiple complaints about the same issue were disqualifying; a single outlier wasn't.</li>
+            <li>Waiting time was a relevant factor — but context-dependent. Groups of friends tolerated it; couples and families with children didn't. This insight pointed toward a future opportunity for the product.</li>
+          </ul>
+
+          <h2>Iterate and Define</h2>
+          <p>After synthesizing the usability findings, we iterated the designs to address the identified friction points. We scoped the implementation to a version that could ship quickly, then applied the improvements to both the restaurant profile and the results page to maintain consistency across the user journey. Launching on both surfaces allowed us to measure the impact of the changes with real usage data rather than just prototype testing.</p>
+          <img src="img/projects/restorando/09.png"/>
+
+          <div class="impactSection">
+            <h2>Impact</h2>
+            <p>We validated the redesign with an A/B test against the previous version, measuring session time and conversion. Session time increased and bounce rate decreased — confirming that users were engaging with the new profile rather than leaving immediately.</p>
+            <img src="img/projects/restorando/10.png"/>
+            <p>The most significant result: <strong>users who saw the new version converted 24% more than those on the old version.</strong> The improvement came not from optimizing the booking prompt, but from giving users the information they actually needed to make a decision. When the experience serves the real job to be done, conversion follows.</p>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>

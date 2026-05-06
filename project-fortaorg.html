@@ -6,7 +6,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-R8P01XBKVN');
     </script>
 
@@ -23,7 +22,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
 </head>
 <body>
 <div class="projectPage">
@@ -31,73 +29,74 @@
     <img loading="lazy" srcset="img/logo.png" class="img" onclick="redirectToPage('index.html')"/>
     <div class="menu-options">
       <a href="index.html#seeWork" class="selected">Work</a>
-      <!--<a href="process.html" class="unselected">Process</a>-->
       <a href="https://www.linkedin.com/in/stefasp/" target="_blank" class="unselected">Experience</a>
-      <a href="#getInContactBox" class="unselected" >Get in contact</a>
+      <a href="#getInContactBox" class="unselected">Get in contact</a>
     </div>
   </div>
   <div class="full-container">
     <div class="modal-content">
-        <div class="modal-text">
-            <img src="img/projects/forta/cover.png"/>
-            <div class="title">
-                <h1><span class="highlight">Forta:</span> The largest network of security intel in Web3</h1>
-                <p>ARG 2023</p>
-            </div>
-            <p>Forta is a network and a community of leading security experts contributing to detect scams and threats.</p>
-            <p>They continuously enhance their detection capabilities with machine learning, ensuring heightened efficiency and agility. Incentivizing community participation, they offer rewards to maintain code quality at its zenith. The integrity of their internal economy is upheld through the utilization of the FORT token.</p>
- 
-            <h2>The Goal</h2>
-            <p>Forta had no subscription plans and users could subscribe to any bot and integrate unlimitedly with their own bots. The idea was to offer different plans and prices depending on the user's needs and the use of the software.</p>
-            <p>To support this, we needed to offer 3 different plans: General Data, Special Data and Bot Execution.</p>
-            <p>The bot execution plan was intended for developers and this plan will also have the option to choose how many units they will need to use.</p>
-            <p>The special data plan will have two types of feeds and the user should be able to choose one or both.</p>
-            <p>Users can choose as many plans as they need and upgrade at any time.</p>
+      <div class="modal-text">
 
-            <h2>Team</h2>
-            <ul>
-              <li>Core Team: Me as the Lead Designer and a Project Manager</li>
-              <li>Collaborators: The development team provided technical feedback to ensure feasibility.</li>
-            </ul>
-
-            <h2>Brainstorming</h2>
-            <p>The first step was to brainstorm different layouts and also evaluate the ideal flow.</p>
-
-            <img src="img/projects/forta/01.png"/>
-
-            <p>Although it was recommended from a usability point of view that users can purchase several plans at the same time, due to technical difficulties the first version will only support purchasing one plan at a time, and future iterations will be planned to include the purchase of multiple plans.</p>
-            <img src="img/projects/forta/02.png"/>
-
-            <h2>User profile</h2>
-            <p>User’s profile could be empty (with no plan or history) or filled with data.</p>
-            <p>When viewing a bot execution plan, they should see how many units they have available and how many they already have in use.</p>
-            <p>In addition, feedback on the status of the plan was included with alerts to avoid problems such as the automatic cancellation of a plan due to lack of payment (when the user would have wanted to prevent it).</p>
-            <img src="img/projects/forta/03.png"/>
-  
-            <h2>User Flow</h2>
-            <p>These are some interface behaviors and user experience definitions:</p>
-            <ul>
-              <li>User can access payment directly from the plan preview in their profile.</li>
-              <li>User would access payment modal after plan selection</li>
-              <li>If clicking “Buy new plan” the plans already ongoing will not appear in the list</li>
-              <li>Users could access a new API key modal</li>
-            </ul>
-            <img src="img/projects/forta/04.png"/>
-            <img src="img/projects/forta/05.png"/>
-
-            <div class="impactSection">
-              <h2>Impact and Learnings</h2>
-              <p>The Forta project provided invaluable insights into designing effective subscription plans within a complex technical environment:</p>
-              <ul>
-                <li>User-Centric Approach: Engaging users in the brainstorming phase highlighted their needs and expectations. Understanding user motivations helped shape the subscription offerings to better align with their requirements.</li>
-                <li>Iterative Design: Starting with a single-plan purchase model allowed for a streamlined initial rollout. This approach minimizes complexity and facilitates easier user onboarding, while future iterations can expand functionality based on user feedback.</li>
-                <li>Clarity in User Profiles: Designing user profiles to clearly display available units and usage status enhanced transparency. Providing alerts for potential issues, such as payment failures, empowers users to take proactive measures, thereby improving overall satisfaction.</li>
-                <li>Seamless Payment Integration: Ensuring that users can access payment options directly from their plan previews simplifies the purchasing process. This reduces friction in user interactions and encourages plan upgrades or changes.</li>
-                <li>Collaboration with Development: Close collaboration with the development team during the design process ensured that proposed features were technically feasible. This partnership is crucial for aligning design intentions with operational capabilities.</li>
-              </ul>
-            </div>
-
+        <img src="img/projects/forta/cover.png"/>
+        <div class="title">
+          <h1><span class="highlight">Forta:</span> The Largest Network of Security Intel in Web3</h1>
+          <p>Argentina · 2023 · Lead Product Designer</p>
         </div>
+
+        <h2>Context</h2>
+        <p>Forta is a decentralized network of security experts and developers who build and maintain bots to detect threats and scams in Web3. It operates as both a B2B product and a developer community — enterprise security teams use it to protect their protocols, while individual developers contribute detection capabilities and earn rewards through Forta's internal economy, powered by the FORT token.</p>
+        <p>Users range from specialized developers at crypto companies integrating Forta's detection capabilities into their infrastructure, to independent contributors building and improving bots within the community. This dual nature — technical B2B product and incentivized community — shaped every design decision in this project.</p>
+
+        <h2>The Problem</h2>
+        <p>Forta had no monetization structure. Users could subscribe to any bot and integrate unlimitedly at no cost. The business needed to introduce paid services — but the challenge wasn't just adding a paywall. The services being introduced were structurally different from each other, each with its own configuration requirements, and users would likely need more than one. The design problem was: how do you let technical users understand, configure, and purchase a set of services with meaningful differences, without turning the experience into a multi-step form?</p>
+        <p>Three types of services needed to be supported:</p>
+        <ul>
+          <li><strong>General Data:</strong> A straightforward subscription with no configuration.</li>
+          <li><strong>Special Data:</strong> Multiple independent feeds, each priced separately — users could subscribe to one or several.</li>
+          <li><strong>Bot Execution:</strong> Intended for developers; requires choosing the number of execution units needed.</li>
+        </ul>
+        <p>All services could be paid with FORT tokens in addition to standard payment methods, reflecting the platform's internal economy.</p>
+
+        <h2>Team</h2>
+        <ul>
+          <li>Lead Designer: Stefania</li>
+          <li>Manager: Project Manager</li>
+          <li>Collaborators: Development team, involved throughout for technical feasibility constraints.</li>
+        </ul>
+
+        <h2>Design Exploration</h2>
+        <p>The first challenge was figuring out the right mental model for how users would think about purchasing. Since these are independent services — not tiers of a single plan — the most natural interaction was an additive one: browse services, add what you need, confirm the purchase together. This mirrors how users already think about configuring tools in a technical environment.</p>
+        <p>I explored multiple layouts and purchase flows to find which best communicated the service differences and supported multi-service selection without becoming overwhelming. The key tension was between flexibility (letting users combine services freely) and clarity (making each service's configuration requirements understandable before committing).</p>
+        <img src="img/projects/forta/01.png"/>
+
+        <p>The recommended flow — select multiple services, configure each, then confirm a single purchase — was the right UX answer. It matched the mental model, reduced friction, and kept the user in control. However, the first version couldn't support it due to technical constraints: the backend could only process one service purchase at a time.</p>
+        <p>Rather than blocking launch, we scoped the MVP to single-service purchase and planned multi-service support as a subsequent iteration. To reduce the awkwardness of this limitation in the UI, services already active in a user's account are hidden from the purchase list — keeping the flow clean and avoiding confusion about what's already owned.</p>
+        <img src="img/projects/forta/02.png"/>
+
+        <h2>User Profile</h2>
+        <p>The profile needed to handle two very different states: a new user with no services yet, and an active user managing multiple subscriptions with distinct configurations.</p>
+        <p>For Bot Execution plans — where users choose a number of units — the profile shows units available vs. units in use, giving developers a clear operational view of their capacity. For all services, proactive alerts surface situations that could cause disruption, such as a payment failure that would trigger automatic cancellation. The goal was to surface these signals early enough for users to act, not after the service had already been cut.</p>
+        <img src="img/projects/forta/03.png"/>
+
+        <h2>Purchase Flow and Key Decisions</h2>
+        <p>Several interaction decisions shaped the final flow:</p>
+        <ul>
+          <li><strong>Direct access from profile:</strong> Users can initiate a new service purchase directly from their profile, without navigating to a separate marketplace page. This reduces steps for returning users who know what they want.</li>
+          <li><strong>Payment modal after selection:</strong> Configuration and payment are separated — users complete service setup first, then confirm payment. This prevents users from feeling locked into a decision before they've finished configuring.</li>
+          <li><strong>Active services hidden on purchase:</strong> When buying a new service, services the user already owns don't appear in the list. This prevents duplicate purchases and reduces cognitive load.</li>
+          <li><strong>API key access:</strong> Developers can generate and access new API keys directly from the service management view, keeping the technical workflow self-contained.</li>
+        </ul>
+        <img src="img/projects/forta/04.png"/>
+        <img src="img/projects/forta/05.png"/>
+
+        <div class="impactSection">
+          <h2>Impact and Learnings</h2>
+          <p>The most instructive moment in this project was the gap between the recommended UX and what the first version could actually support. Multi-service purchase was the right solution — it matched the product's nature and user expectations. Scoping it out for technical reasons was the right call for launch, but it required careful UI work to prevent the single-service constraint from feeling like a product limitation to users.</p>
+          <p>Designing for a technically sophisticated audience changed the approach in specific ways. These users don't need protection from complexity — they need clarity about what they're configuring and why it matters. The Bot Execution plan's unit-based model, which might feel abstract to a general user, was entirely natural to the developer audience. Lean into the user's mental model rather than oversimplifying.</p>
+          <p>The dual nature of Forta — B2B product and community with an internal economy — also shaped the payment design. Supporting FORT token payments wasn't just a feature; it was a signal of respect for the community's own value system. In platforms with internal economies, integrating that currency into core transactional flows reinforces belonging and trust.</p>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>

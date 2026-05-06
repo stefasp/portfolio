@@ -178,8 +178,6 @@ body a{
   flex-direction: column;
   padding: 2px 0;
   text-align: right;
-}
-.hero .righty img{
   width: 75%;
 }
 .hero .polaroid {
@@ -300,8 +298,13 @@ body a{
   width: 100%;
 }
 .about-me .column img{
-  height: 80px;
-  width: 80px;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.about-me .description p{
+  line-height: 18px;
 }
 .about-me .preview{
   align-items: center;
