@@ -478,3 +478,32 @@ body a{
 .contactBox .item .imgLink{
     padding: 0.5%;
 }
+
+.services-section {
+  padding: 0 var(--horizontal-padding, 48px) 48px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+.service-card {
+  background: #f9f9fb;
+  border-radius: 12px;
+  padding: 28px 32px;
+  border: 1px solid #efefef;
+}
+.service-card .service-title {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+.service-card .service-description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #555;
+}

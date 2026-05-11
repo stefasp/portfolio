@@ -226,6 +226,14 @@
     flex: 0 0 48%; /* Each item takes 50% of the container width */
   }
 }
+@media (max-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-section {
+    padding: 0 24px 40px;
+  }
+}
 
 @media (max-width: 745px) {
   .hero .rocket{
